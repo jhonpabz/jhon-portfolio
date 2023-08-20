@@ -2,6 +2,7 @@ import { Calendar, ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { IProjectCardProps } from "@/types/props";
 import {
   Card,
   CardContent,
@@ -11,7 +12,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "./ui/badge";
-import { IProjectCardProps } from "@/types/props";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export const ProjectCard = ({
   image,
@@ -29,7 +35,7 @@ export const ProjectCard = ({
           <div className="pl-8 pt-8 ">
             <Image
               src={image}
-              alt="Project"
+              alt="Project | Experience"
               width={700}
               height={400}
               className="rounded-lg border-2 group-hover:border-primary/70 transition-colors duration-200"
@@ -52,14 +58,32 @@ export const ProjectCard = ({
               {githubUrl && (
                 <Link href={githubUrl} legacyBehavior>
                   <a target="_blank" rel="noopener noreferrer" className="mr-3">
-                    <Github className="w-4 h-4" />
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Github className="w-4 h-4" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="text-xs">View code on Github</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   </a>
                 </Link>
               )}
               {siteUrl && (
                 <Link href={siteUrl} legacyBehavior>
                   <a target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4" />
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <ExternalLink className="w-4 h-4" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="text-xs">Visit live site</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   </a>
                 </Link>
               )}
