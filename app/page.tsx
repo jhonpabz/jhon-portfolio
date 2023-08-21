@@ -1,3 +1,4 @@
+import { Divider } from "@/components/Divider";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ViewMoreLink } from "@/components/ViewMoreLink";
@@ -6,6 +7,7 @@ export default function Home() {
   return (
     <main>
       <Header />
+      <Divider />
       <div className=" py-5">
         <ProjectCard
           image="/sample.jpg"

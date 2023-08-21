@@ -11,7 +11,7 @@ export const Header = () => {
   console.log("currentTheme", currentTheme);
 
   return (
-    <div className="py-24">
+    <div className="py-14 lg:py-24">
       <div className="flex justify-between">
         <div>
           <Avatar className="h-24 w-24">

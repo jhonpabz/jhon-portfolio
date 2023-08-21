@@ -32,8 +32,8 @@ export const ProjectCard = ({
     <div className="group cursor-pointer">
       <Link href={`${siteUrl}`} legacyBehavior>
         <a target="_blank" rel="noopener noreferrer" className="mr-3">
-          <Card className="flex flex-row  group-hover:bg-primary/10 transition-colors duration-200">
-            <div className="basis-1/4">
+          <Card className="flex flex-row group-hover:bg-primary/10 transition-colors duration-200">
+            <div className="md:basis-1/4">
               <div className="pl-8 pt-8 ">
                 <Image
                   src={image}
@@ -44,7 +44,7 @@ export const ProjectCard = ({
                 />
               </div>
             </div>
-            <div className="basis-3/4">
+            <div className="md:basis-3/4">
               <CardHeader>
                 <CardTitle className="text-xl group-hover:">{title}</CardTitle>
                 <CardDescription>
