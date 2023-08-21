@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+          <div className="mx-auto max-w-4xl h-full w-full"> {children}</div>
         </ThemeProvider>
       </body>
     </html>

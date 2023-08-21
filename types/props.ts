@@ -7,3 +7,8 @@ export interface IProjectCardProps {
   siteUrl?: string;
   githubUrl?: string;
 }
+
+export interface IViewMoreLinkProps {
+  label: string;
+  link: string;
+}
