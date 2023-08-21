@@ -1,13 +1,12 @@
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ViewMoreLink } from "@/components/ViewMoreLink";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Header />
-      <div className=" p-5">
+      <div className=" py-5">
         <ProjectCard
           image="/sample.jpg"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
