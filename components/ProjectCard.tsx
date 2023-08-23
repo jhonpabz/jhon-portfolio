@@ -24,7 +24,7 @@ export const ProjectCard = ({
   title,
   description,
   date,
-  stacks = ["Test", "Test1", "Test2"],
+  stacks,
   siteUrl,
   githubUrl,
 }: IProjectCardProps) => {
@@ -95,13 +95,15 @@ export const ProjectCard = ({
                   )}
                 </div>
               </CardContent>
-              <CardFooter>
-                {stacks.map((stack) => (
-                  <Badge variant="secondary" className="mr-4" key={stack}>
-                    {stack}
-                  </Badge>
-                ))}
-              </CardFooter>
+              {!!stacks && (
+                <CardFooter>
+                  {stacks.map((stack) => (
+                    <Badge variant="secondary" className="mr-4" key={stack}>
+                      {stack}
+                    </Badge>
+                  ))}
+                </CardFooter>
+              )}
             </div>
           </Card>
         </a>
