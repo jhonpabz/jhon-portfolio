@@ -2,7 +2,7 @@ import { Separator } from "./ui/separator";
 
 export const Divider = () => {
   return (
-    <div className="flex">
+    <div className="flex overflow-hidden">
       Divider <Separator className="mt-3 ml-2" />
     </div>
   );
