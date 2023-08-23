@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <div className="mx-auto max-w-6xl h-full w-full p-5">
             <div className="flex flex-row">
               <div className="lg:basis-1/2 invisible lg:visible">

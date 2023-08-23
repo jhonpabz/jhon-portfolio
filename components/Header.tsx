@@ -4,11 +4,10 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { cn } from "@/lib/utils";
 
 export const Header = () => {
-  const { setTheme } = useTheme();
-  const currentTheme = localStorage.getItem("theme");
-  console.log("currentTheme", currentTheme);
+  const { setTheme, theme } = useTheme();
 
   return (
     <div className="py-14 lg:py-24">
@@ -21,7 +20,7 @@ export const Header = () => {
         </div>
         <div>
           <Button
-            onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             variant="ghost"
             size="icon"
           >
@@ -32,7 +31,12 @@ export const Header = () => {
       </div>
 
       <div className="pt-8">
-        <p className="text-xl font-bold">
+        <p
+          className={cn(
+            "text-xl font-bold",
+            theme === "dark" ? "text-[#5EEAD4]" : "text-[#207d6f]"
+          )}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing eli
         </p>
         {/*        <p className="pt-4 text-sm text-primary/60">
