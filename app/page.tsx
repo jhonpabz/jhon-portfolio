@@ -18,6 +18,7 @@ export default function Home() {
           githubUrl="https://www.google.com/"
         />
       </div>
+
       <ViewMoreLink label="Google" link="https://www.google.com/" />
     </main>
   );
