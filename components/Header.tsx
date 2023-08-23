@@ -35,7 +35,7 @@ export const Header = () => {
         <p className="text-xl font-bold">
           Lorem ipsum dolor sit amet, consectetur adipiscing eli
         </p>
-        <p className="pt-4 text-sm text-primary/60">
+        {/*        <p className="pt-4 text-sm text-primary/60">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -43,7 +43,7 @@ export const Header = () => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        </p> */}
       </div>
     </div>
   );

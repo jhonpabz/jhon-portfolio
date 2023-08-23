@@ -24,24 +24,14 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="mx-auto max-w-6xl h-full w-full p-5">
             <div className="flex flex-row">
-              <div className="basis-1/2 invisible lg:visible">
+              <div className="lg:basis-1/2 invisible lg:visible">
                 <div className="fixed max-w-sm">
                   <Header />
                 </div>
               </div>
-              <div className="basis-1/2">{children}</div>
+              <div className="lg:basis-1/2">{children}</div>
             </div>
           </div>
-          <div className="mx-auto max-w-6xl h-full w-full p-5">
-            <div className="flex flex-row">
-              <div className="basis-1/2">
-                <div className="fixed">Side</div>
-              </div>
-              <div className="basis-1/2">{children}</div>
-            </div>
-          </div>
-          <Footer />
-          <Sidebar />
         </ThemeProvider>
       </body>
     </html>

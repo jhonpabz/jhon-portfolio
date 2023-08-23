@@ -29,7 +29,7 @@ export const ProjectCard = ({
   githubUrl,
 }: IProjectCardProps) => {
   return (
-    <div className="group cursor-pointer">
+    <div className="group cursor-pointer py-5 ">
       <Link href={`${siteUrl}`} legacyBehavior>
         <a target="_blank" rel="noopener noreferrer" className="mr-3">
           <Card className="flex flex-row group-hover:bg-primary/10 transition-colors duration-200">
