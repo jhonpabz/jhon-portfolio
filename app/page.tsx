@@ -16,7 +16,7 @@ export default function Home() {
         <div className="lg:py-24">
           <About />
         </div>
-
+        <Divider label="Test" />
         {projectsData.map((project) => (
           <ProjectCard
             key={project.id}
@@ -29,7 +29,7 @@ export default function Home() {
             githubUrl={project.githubUrl}
           />
         ))}
-        <Divider />
+        <Divider label="Test" />
       </div>
 
       <ViewMoreLink label="Google" link="https://www.google.com/" />
