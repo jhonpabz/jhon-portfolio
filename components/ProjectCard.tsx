@@ -46,7 +46,12 @@ export const ProjectCard = ({
                   alt="Project | Experience"
                   width={700}
                   height={400}
-                  className="rounded-lg border-2 group-hover:border-primary/70 transition-colors duration-200"
+                  className={cn(
+                    "rounded-lg border-2 transition-colors duration-300",
+                    theme === "dark"
+                      ? "group-hover:border-lightGreen"
+                      : "group-hover:border-darkGreen"
+                  )}
                 />
               </div>
             </div>
@@ -56,8 +61,8 @@ export const ProjectCard = ({
                   className={cn(
                     "text-xl transition-colors duration-300",
                     theme === "dark"
-                      ? "group-hover:text-[#5EEAD4]"
-                      : "group-hover:text-[#207d6f]"
+                      ? "group-hover:text-lightGreen"
+                      : "group-hover:text-darkGreen"
                   )}
                 >
                   {title}
@@ -117,7 +122,7 @@ export const ProjectCard = ({
                       variant="secondary"
                       className={cn(
                         "mr-4 transition-colors duration-300",
-                        theme === "dark" ? "text-[#5EEAD4]" : "text-[#207d6f]"
+                        theme === "dark" ? "text-lightGreen" : "text-darkGreen"
                       )}
                       key={stack}
                     >

@@ -1,16 +1,17 @@
 "use client";
 
-import { Moon, Sun } from "lucide-react";
+import { Linkedin, LinkedinIcon, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
+import { Socials } from "./Socials";
 
 export const Header = () => {
   const { setTheme, theme } = useTheme();
 
   return (
-    <div className="py-14 lg:py-24">
+    <div className="py-14 lg:py-24 lg:h-screen">
       <div className="flex justify-between">
         <div>
           <Avatar className="h-24 w-24">
@@ -30,24 +31,21 @@ export const Header = () => {
         </div>
       </div>
 
-      <div className="pt-8">
-        <p
-          className={cn(
-            "text-xl font-bold",
-            theme === "dark" ? "text-[#5EEAD4]" : "text-[#207d6f]"
-          )}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing eli
-        </p>
-        {/*        <p className="pt-4 text-sm text-primary/60">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p> */}
+      <div className="flex flex-col">
+        <div className="pt-8 flex-1">
+          <p
+            className={cn(
+              "text-xl font-bold",
+              theme === "dark" ? "text-[#5EEAD4]" : "text-[#207d6f]"
+            )}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing eli
+          </p>
+        </div>
+
+        <div className="lg:absolute lg:bottom-24 lg:left-0 lg:block lg:self-end">
+          <Socials />
+        </div>
       </div>
     </div>
   );
