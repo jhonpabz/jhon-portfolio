@@ -1,6 +1,9 @@
+"use client";
+
 import { Calendar, ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 import { IProjectCardProps } from "@/types/props";
 import {
@@ -18,18 +21,21 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 
 export const ProjectCard = ({
   image,
   title,
   description,
   date,
-  stacks = ["Test", "Test1", "Test2"],
+  stacks,
   siteUrl,
   githubUrl,
 }: IProjectCardProps) => {
+  const { theme } = useTheme();
+
   return (
-    <div className="group cursor-pointer">
+    <div className="group cursor-pointer py-1 ">
       <Link href={`${siteUrl}`} legacyBehavior>
         <a target="_blank" rel="noopener noreferrer" className="mr-3">
           <Card className="flex flex-row group-hover:bg-primary/10 transition-colors duration-200">
@@ -40,13 +46,27 @@ export const ProjectCard = ({
                   alt="Project | Experience"
                   width={700}
                   height={400}
-                  className="rounded-lg border-2 group-hover:border-primary/70 transition-colors duration-200"
+                  className={cn(
+                    "rounded-lg border-2 transition-colors duration-300",
+                    theme === "dark"
+                      ? "group-hover:border-lightGreen"
+                      : "group-hover:border-darkGreen"
+                  )}
                 />
               </div>
             </div>
             <div className="md:basis-3/4">
               <CardHeader>
-                <CardTitle className="text-xl group-hover:">{title}</CardTitle>
+                <CardTitle
+                  className={cn(
+                    "text-xl transition-colors duration-300",
+                    theme === "dark"
+                      ? "group-hover:text-lightGreen"
+                      : "group-hover:text-darkGreen"
+                  )}
+                >
+                  {title}
+                </CardTitle>
                 <CardDescription>
                   <div className="mt-1">{description}</div>
                   <div className="flex mt-4">
@@ -95,13 +115,22 @@ export const ProjectCard = ({
                   )}
                 </div>
               </CardContent>
-              <CardFooter>
-                {stacks.map((stack) => (
-                  <Badge variant="secondary" className="mr-4" key={stack}>
-                    {stack}
-                  </Badge>
-                ))}
-              </CardFooter>
+              {!!stacks && (
+                <CardFooter>
+                  {stacks.map((stack) => (
+                    <Badge
+                      variant="secondary"
+                      className={cn(
+                        "mr-4 transition-colors duration-300",
+                        theme === "dark" ? "text-lightGreen" : "text-darkGreen"
+                      )}
+                      key={stack}
+                    >
+                      {stack}
+                    </Badge>
+                  ))}
+                </CardFooter>
+              )}
             </div>
           </Card>
         </a>

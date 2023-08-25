@@ -12,3 +12,7 @@ export interface IViewMoreLinkProps {
   label: string;
   link: string;
 }
+
+export interface IDividerProps {
+  label: string;
+}

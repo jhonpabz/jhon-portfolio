@@ -2,6 +2,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Footer } from "@/components/Footer";
+import { Sidebar } from "@/components/Sidebar";
+import { Header } from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +21,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="mx-auto max-w-4xl h-full w-full p-5"> {children}</div>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <div className="mx-auto max-w-6xl h-full w-full p-5">
+            <div className="flex flex-row">
+              <div className="lg:basis-1/2 invisible lg:visible">
+                <div className="fixed max-w-sm">
+                  <Header />
+                </div>
+              </div>
+              <div className="lg:basis-1/2">{children}</div>
+            </div>
+          </div>
         </ThemeProvider>
       </body>
     </html>

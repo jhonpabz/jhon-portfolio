@@ -1,23 +1,43 @@
+import { About } from "@/components/About";
 import { Divider } from "@/components/Divider";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Socials } from "@/components/Socials";
 import { ViewMoreLink } from "@/components/ViewMoreLink";
+import { projectsData } from "@/lib/data";
 
 export default function Home() {
   return (
     <main>
-      <Header />
-      <Divider />
-      <div className=" py-5">
-        <ProjectCard
-          image="/sample.jpg"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          date="2019 - 2022"
-          title="JhonPabz"
-          siteUrl="https://www.google.com/"
-          githubUrl="https://www.google.com/"
-        />
+      <div className="lg:hidden ">
+        <Header />
       </div>
+
+      <div>
+        <div className="lg:py-24">
+          <About />
+        </div>
+        {/* 
+        <div className="lg:hidden">
+          <Divider label="Test" />
+          <Socials />
+        </div> */}
+        <Divider label="Test" />
+        {projectsData.map((project) => (
+          <ProjectCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            date={project.date}
+            image={project.image}
+            stacks={project.stacks}
+            siteUrl={project.siteUrl}
+            githubUrl={project.githubUrl}
+          />
+        ))}
+        <Divider label="Test" />
+      </div>
+
       <ViewMoreLink label="Google" link="https://www.google.com/" />
     </main>
   );
