@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { Linkedin, LinkedinIcon, Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import { Button } from "./ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { cn } from "@/lib/utils";
-import { Socials } from "./Socials";
+import { Linkedin, LinkedinIcon, Moon, Sun } from 'lucide-react';
+import { useTheme } from 'next-themes';
+import { Button } from './ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { cn } from '@/lib/utils';
+import { Socials } from './Socials';
 
 export const Header = () => {
   const { setTheme, theme } = useTheme();
@@ -15,13 +15,13 @@ export const Header = () => {
       <div className="flex justify-between">
         <div>
           <Avatar className="h-24 w-24">
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarImage src="/jhon-pic.jpg" alt="jhon" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
         <div>
           <Button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             variant="ghost"
             size="icon"
           >
@@ -35,11 +35,15 @@ export const Header = () => {
         <div className="pt-8 flex-1">
           <p
             className={cn(
-              "text-xl font-bold",
-              theme === "dark" ? "text-[#5EEAD4]" : "text-[#207d6f]"
+              'text-4xl font-bold',
+              theme === 'dark' ? 'text-[#5EEAD4]' : 'text-[#207d6f]'
             )}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing eli
+            Jhon Cesar Pablo
+          </p>
+          <p className="text-xl pt-4">Front End Software Engineer</p>
+          <p className="text-sm pt-4 text-primary/60">
+            Experienced front end software engineer focused on building web app
           </p>
         </div>
 
