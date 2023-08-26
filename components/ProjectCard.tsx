@@ -22,6 +22,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+import { BaseNewTabLink } from "./base/BaseNewTabLink";
 
 export const ProjectCard = ({
   image,
@@ -78,40 +79,32 @@ export const ProjectCard = ({
               <CardContent>
                 <div className="flex">
                   {githubUrl && (
-                    <Link href={githubUrl} legacyBehavior>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mr-3"
-                      >
-                        <TooltipProvider>
-                          <Tooltip>
-                            <TooltipTrigger asChild>
-                              <Github className="w-4 h-4" />
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="text-xs">View code on Github</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </a>
-                    </Link>
+                    <BaseNewTabLink siteUrl={githubUrl} style="mr-3">
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <Github className="w-4 h-4" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="text-xs">View code on Github</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </BaseNewTabLink>
                   )}
                   {siteUrl && (
-                    <Link href={siteUrl} legacyBehavior>
-                      <a target="_blank" rel="noopener noreferrer">
-                        <TooltipProvider>
-                          <Tooltip>
-                            <TooltipTrigger asChild>
-                              <ExternalLink className="w-4 h-4" />
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="text-xs">Visit live site</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </a>
-                    </Link>
+                    <BaseNewTabLink siteUrl={siteUrl}>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <ExternalLink className="w-4 h-4" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="text-xs">Visit live site</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </BaseNewTabLink>
                   )}
                 </div>
               </CardContent>
