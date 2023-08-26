@@ -31,97 +31,95 @@ export const ProjectCard = (
 
   return (
     <div className="group cursor-pointer py-1 ">
-      <Link href={`${siteUrl}`} legacyBehavior>
-        <a target="_blank" rel="noopener noreferrer" className="mr-3">
-          <Card className="flex flex-row group-hover:bg-primary/10 transition-colors duration-200">
-            <div className="md:basis-1/4">
-              <div className="pl-8 pt-8 ">
-                <Image
-                  src={imgSrc}
-                  alt="Project | Experience"
-                  width={700}
-                  height={400}
-                  className={cn(
-                    "rounded-lg border-2 transition-colors duration-300",
-                    theme === "dark"
-                      ? "group-hover:border-lightGreen"
-                      : "group-hover:border-darkGreen"
-                  )}
-                />
-              </div>
+      <BaseNewTabLink siteUrl={`${siteUrl}`}>
+        <Card className="flex flex-row group-hover:bg-primary/10 transition-colors duration-200">
+          <div className="md:basis-1/4">
+            <div className="pl-8 pt-8 ">
+              <Image
+                src={imgSrc}
+                alt="Project | Experience"
+                width={700}
+                height={400}
+                className={cn(
+                  "rounded-lg border-2 transition-colors duration-300",
+                  theme === "dark"
+                    ? "group-hover:border-lightGreen"
+                    : "group-hover:border-darkGreen"
+                )}
+              />
             </div>
-            <div className="md:basis-3/4">
-              <CardHeader>
-                <CardTitle
-                  className={cn(
-                    "text-xl transition-colors duration-300",
-                    theme === "dark"
-                      ? "group-hover:text-lightGreen"
-                      : "group-hover:text-darkGreen"
-                  )}
-                >
-                  {title}
-                </CardTitle>
-                <CardDescription>
-                  <div className="mt-1">{description}</div>
-                  <div className="flex mt-4">
-                    <Calendar className="rounded-md mr-2 w-4 h-4 mt-px" />
-                    {date}
-                  </div>
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex">
-                  {githubUrl && (
-                    <BaseNewTabLink siteUrl={githubUrl} style="mr-3">
-                      <TooltipProvider>
-                        <Tooltip>
-                          <TooltipTrigger asChild>
-                            <Github className="w-4 h-4" />
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="text-xs">View code on Github</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </BaseNewTabLink>
-                  )}
-                  {siteUrl && (
-                    <BaseNewTabLink siteUrl={siteUrl}>
-                      <TooltipProvider>
-                        <Tooltip>
-                          <TooltipTrigger asChild>
-                            <ExternalLink className="w-4 h-4" />
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="text-xs">Visit live site</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </BaseNewTabLink>
-                  )}
+          </div>
+          <div className="md:basis-3/4">
+            <CardHeader>
+              <CardTitle
+                className={cn(
+                  "text-xl transition-colors duration-300",
+                  theme === "dark"
+                    ? "group-hover:text-lightGreen"
+                    : "group-hover:text-darkGreen"
+                )}
+              >
+                {title}
+              </CardTitle>
+              <CardDescription>
+                <div className="mt-1">{description}</div>
+                <div className="flex mt-4">
+                  <Calendar className="rounded-md mr-2 w-4 h-4 mt-px" />
+                  {date}
                 </div>
-              </CardContent>
-              {!!stacks && (
-                <CardFooter>
-                  {stacks.map((stack) => (
-                    <Badge
-                      variant="secondary"
-                      className={cn(
-                        "mr-4 transition-colors duration-300",
-                        theme === "dark" ? "text-lightGreen" : "text-darkGreen"
-                      )}
-                      key={stack}
-                    >
-                      {stack}
-                    </Badge>
-                  ))}
-                </CardFooter>
-              )}
-            </div>
-          </Card>
-        </a>
-      </Link>
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex">
+                {githubUrl && (
+                  <BaseNewTabLink siteUrl={githubUrl} style="mr-3">
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Github className="w-4 h-4" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="text-xs">View code on Github</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </BaseNewTabLink>
+                )}
+                {siteUrl && (
+                  <BaseNewTabLink siteUrl={siteUrl}>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <ExternalLink className="w-4 h-4" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="text-xs">Visit live site</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </BaseNewTabLink>
+                )}
+              </div>
+            </CardContent>
+            {!!stacks && (
+              <CardFooter>
+                {stacks.map((stack) => (
+                  <Badge
+                    variant="secondary"
+                    className={cn(
+                      "mr-4 transition-colors duration-300",
+                      theme === "dark" ? "text-lightGreen" : "text-darkGreen"
+                    )}
+                    key={stack}
+                  >
+                    {stack}
+                  </Badge>
+                ))}
+              </CardFooter>
+            )}
+          </div>
+        </Card>
+      </BaseNewTabLink>
     </div>
   );
 };
