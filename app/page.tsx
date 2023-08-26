@@ -1,8 +1,8 @@
 import { About } from "@/components/About";
 import { Divider } from "@/components/Divider";
-import { ExperienceCard } from "@/components/ExperienceCard";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
+import { ExperienceCard } from "@/components/ExperienceCard";
 import { ViewMoreLink } from "@/components/ViewMoreLink";
 import { experienceData, projectsData } from "@/constant/card";
 
