@@ -1,10 +1,11 @@
 import { About } from "@/components/About";
 import { Divider } from "@/components/Divider";
+import { ExperienceCard } from "@/components/ExperienceCard";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Socials } from "@/components/Socials";
 import { ViewMoreLink } from "@/components/ViewMoreLink";
-import { projectsData } from "@/lib/data";
+import { experienceData, projectsData } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -18,6 +19,18 @@ export default function Home() {
           <About />
         </div>
 
+        <Divider label="Test" />
+
+        {experienceData.map((exp) => (
+          <ExperienceCard
+            key={exp.workPeriod}
+            title={exp.title}
+            workPeriod={exp.workPeriod}
+            description={exp.description}
+            stacks={exp.stacks}
+            siteUrl={exp.siteUrl}
+          />
+        ))}
         <Divider label="Test" />
 
         {projectsData.map((project) => (

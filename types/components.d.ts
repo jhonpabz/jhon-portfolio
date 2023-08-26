@@ -15,4 +15,13 @@ declare namespace ComponentsPropsNamespace {
     siteUrl?: string;
     githubUrl?: string;
   };
+
+  type ExperienceCardProps = React.HTMLAttributes<HTMLDivElement> & {
+    workPeriod: string;
+    title: string;
+    description: string;
+    stacks?: string[];
+    siteUrl?: string;
+    githubUrl?: string;
+  };
 }

@@ -54,3 +54,15 @@ export const projectsData = [
     githubUrl: "https://www.google.com/",
   },
 ];
+
+export const experienceData = [
+  {
+    workPeriod: "2019 - 2022",
+    title: "Test 5",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    date: "2019 - 2022",
+    stacks: ["Zzxcv", "Test1", "Test2"],
+    siteUrl: "https://www.google.com/",
+  },
+];
