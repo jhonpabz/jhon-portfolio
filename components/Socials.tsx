@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { Facebook, Github, Linkedin } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
@@ -23,6 +23,18 @@ export const Socials = () => {
       <Link href="https://github.com/jhonpabz" legacyBehavior>
         <a target="_blank" rel="noopener noreferrer" className="mr-3">
           <Github
+            className={cn(
+              "transition-colors duration-200",
+              theme === "dark"
+                ? "hover:text-lightGreen"
+                : "hover:text-darkGreen"
+            )}
+          />
+        </a>
+      </Link>
+      <Link href="https://www.facebook.com/jhoncesarpablo/" legacyBehavior>
+        <a target="_blank" rel="noopener noreferrer" className="mr-3">
+          <Facebook
             className={cn(
               "transition-colors duration-200",
               theme === "dark"
