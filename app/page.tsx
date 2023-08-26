@@ -3,9 +3,8 @@ import { Divider } from "@/components/Divider";
 import { ExperienceCard } from "@/components/ExperienceCard";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
-import { Socials } from "@/components/Socials";
 import { ViewMoreLink } from "@/components/ViewMoreLink";
-import { experienceData, projectsData } from "@/lib/data";
+import { experienceData, projectsData } from "@/constant/card";
 
 export default function Home() {
   return (

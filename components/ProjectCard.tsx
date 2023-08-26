@@ -40,7 +40,7 @@ export const ProjectCard = (
                 width={700}
                 height={400}
                 className={cn(
-                  "rounded-lg border-2 transition-colors duration-300",
+                  "rounded-lg border-2 transition-colors duration-300 min-w-[150px]",
                   theme === "dark"
                     ? "group-hover:border-lightGreen"
                     : "group-hover:border-darkGreen"
