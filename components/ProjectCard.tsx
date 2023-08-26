@@ -4,8 +4,6 @@ import { Calendar, ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-
-import { IProjectCardProps } from "@/types/props";
 import {
   Card,
   CardContent,
@@ -24,15 +22,11 @@ import {
 import { cn } from "@/lib/utils";
 import { BaseNewTabLink } from "./base/BaseNewTabLink";
 
-export const ProjectCard = ({
-  image,
-  title,
-  description,
-  date,
-  stacks,
-  siteUrl,
-  githubUrl,
-}: IProjectCardProps) => {
+export const ProjectCard = (
+  props: ComponentsPropsNamespace.ProjectCardProps
+) => {
+  const { imgSrc, title, description, date, stacks, siteUrl, githubUrl } =
+    props;
   const { theme } = useTheme();
 
   return (
@@ -43,7 +37,7 @@ export const ProjectCard = ({
             <div className="md:basis-1/4">
               <div className="pl-8 pt-8 ">
                 <Image
-                  src={image}
+                  src={imgSrc}
                   alt="Project | Experience"
                   width={700}
                   height={400}

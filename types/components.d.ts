@@ -5,4 +5,14 @@ declare namespace ComponentsPropsNamespace {
     siteUrl: string;
     style?: string;
   };
+
+  type ProjectCardProps = React.HTMLAttributes<HTMLDivElement> & {
+    imgSrc: string;
+    title: string;
+    description: string;
+    date: string;
+    stacks?: string[];
+    siteUrl?: string;
+    githubUrl?: string;
+  };
 }

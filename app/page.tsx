@@ -29,7 +29,7 @@ export default function Home() {
             title={project.title}
             description={project.description}
             date={project.date}
-            image={project.image}
+            imgSrc={project.image}
             stacks={project.stacks}
             siteUrl={project.siteUrl}
             githubUrl={project.githubUrl}
