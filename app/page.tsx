@@ -9,7 +9,7 @@ import { experienceData, projectsData } from "@/constant/card";
 export default function Home() {
   return (
     <main>
-      <div className="lg:hidden ">
+      <div className="lg:hidden">
         <Header />
       </div>
 

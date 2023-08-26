@@ -19,7 +19,7 @@ export const ExperienceCard = (
   const { theme } = useTheme();
 
   return (
-    <div className="group cursor-pointer py-2">
+    <div id="experience" className="group cursor-pointer py-2">
       <BaseNewTabLink siteUrl={`${siteUrl}`}>
         <Card className="flex flex-col lg:flex-row md:flex-row  group-hover:bg-primary/10 transition-colors duration-200">
           <div className="md:basis-1/4">

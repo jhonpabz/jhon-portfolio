@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div>
+    <div id="about">
       <p className="text-lg text-primary">Lorem</p>
       <p className="text-sm text-primary/60 mt-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

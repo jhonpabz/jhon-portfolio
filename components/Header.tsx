@@ -1,11 +1,12 @@
-'use client';
+"use client";
 
-import { Linkedin, LinkedinIcon, Moon, Sun } from 'lucide-react';
-import { useTheme } from 'next-themes';
-import { Button } from './ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { cn } from '@/lib/utils';
-import { Socials } from './Socials';
+import { Linkedin, LinkedinIcon, Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "./ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { cn } from "@/lib/utils";
+import { Socials } from "./Socials";
+import { NavLink } from "./NavLink";
 
 export const Header = () => {
   const { setTheme, theme } = useTheme();
@@ -21,7 +22,7 @@ export const Header = () => {
         </div>
         <div>
           <Button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             variant="ghost"
             size="icon"
           >
@@ -35,8 +36,8 @@ export const Header = () => {
         <div className="pt-8 flex-1">
           <p
             className={cn(
-              'text-4xl font-bold',
-              theme === 'dark' ? 'text-[#5EEAD4]' : 'text-[#207d6f]'
+              "text-4xl font-bold",
+              theme === "dark" ? "text-[#5EEAD4]" : "text-[#207d6f]"
             )}
           >
             Jhon Cesar Pablo
@@ -46,7 +47,7 @@ export const Header = () => {
             Experienced front end software engineer focused on building web app
           </p>
         </div>
-
+        <NavLink />
         <div className="lg:absolute lg:bottom-24 lg:left-0 lg:block lg:self-end">
           <Socials />
         </div>
