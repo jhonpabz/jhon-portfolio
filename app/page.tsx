@@ -17,12 +17,9 @@ export default function Home() {
         <div className="lg:py-24">
           <About />
         </div>
-        {/* 
-        <div className="lg:hidden">
-          <Divider label="Test" />
-          <Socials />
-        </div> */}
+
         <Divider label="Test" />
+
         {projectsData.map((project) => (
           <ProjectCard
             key={project.id}

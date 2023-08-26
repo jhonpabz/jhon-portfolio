@@ -2,7 +2,6 @@
 
 import { Calendar, ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "next-themes";
 import {
   Card,
@@ -30,7 +29,7 @@ export const ProjectCard = (
   const { theme } = useTheme();
 
   return (
-    <div className="group cursor-pointer py-1 ">
+    <div className="group cursor-pointer py-2">
       <BaseNewTabLink siteUrl={`${siteUrl}`}>
         <Card className="flex flex-row group-hover:bg-primary/10 transition-colors duration-200">
           <div className="md:basis-1/4">
