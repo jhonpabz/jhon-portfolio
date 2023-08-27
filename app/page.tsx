@@ -41,7 +41,6 @@ export default function Home() {
             key={project.id}
             title={project.title}
             description={project.description}
-            date={project.date}
             imgSrc={project.image}
             stacks={project.stacks}
             siteUrl={project.siteUrl}

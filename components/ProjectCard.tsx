@@ -1,6 +1,6 @@
 'use client';
 
-import { Calendar, ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import {
@@ -62,10 +62,6 @@ export const ProjectCard = (
               </CardTitle>
               <CardDescription>
                 <div className="mt-1">{description}</div>
-                <div className="flex mt-4">
-                  <Calendar className="rounded-md mr-2 w-4 h-4 mt-px" />
-                  {date}
-                </div>
               </CardDescription>
             </CardHeader>
             <CardContent>
