@@ -1,14 +1,15 @@
+import Jhonshoppe from '@/assets/project-jhonshoppe-nuxt.jpg';
+
 export const projectsData = [
   {
     id: 1,
     title: 'JhonPabz',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'E-commerce web app using Nuxt JS + Supabase Authentication.',
     date: '2019 - 2022',
-    image: '/sample.jpg',
-    stacks: ['Test', 'Test1', 'Test2', 'Test2', 'Test2'],
-    siteUrl: 'https://www.google.com/',
-    githubUrl: 'https://www.google.com/',
+    image: Jhonshoppe,
+    stacks: ['Vue', 'Nuxt Js', 'Typescript', 'Tailwind', 'Supabase '],
+    siteUrl: 'https://jhonshoppe.netlify.app/',
+    githubUrl: 'https://github.com/jhonpabz/jhonshoppe',
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ export const projectsData = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     date: '2019 - 2022',
     image: '/sample.jpg',
-    stacks: ['Zzxcv', 'Test1', 'Test2'],
+    stacks: ['Vue', 'Nuxt Js', 'Tailwind'],
     siteUrl: 'https://www.google.com/',
     githubUrl: 'https://www.google.com/',
   },
