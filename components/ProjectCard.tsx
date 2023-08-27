@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { Calendar, ExternalLink, Github } from "lucide-react";
-import Image from "next/image";
-import { useTheme } from "next-themes";
+import { Calendar, ExternalLink, Github } from 'lucide-react';
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
 import {
   Card,
   CardContent,
@@ -10,16 +10,16 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "./ui/badge";
+} from '@/components/ui/card';
+import { Badge } from './ui/badge';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import { BaseNewTabLink } from "./base/BaseNewTabLink";
+} from '@/components/ui/tooltip';
+import { cn } from '@/lib/utils';
+import { BaseNewTabLink } from './base/BaseNewTabLink';
 
 export const ProjectCard = (
   props: ComponentsPropsNamespace.ProjectCardProps
@@ -40,10 +40,10 @@ export const ProjectCard = (
                 width={700}
                 height={400}
                 className={cn(
-                  "rounded-lg border-2 transition-colors duration-300 min-w-[150px]",
-                  theme === "dark"
-                    ? "group-hover:border-lightGreen"
-                    : "group-hover:border-darkGreen"
+                  'rounded-lg border-2 transition-colors duration-300 min-w-[150px]',
+                  theme === 'dark'
+                    ? 'group-hover:border-lightGreen'
+                    : 'group-hover:border-darkGreen'
                 )}
               />
             </div>
@@ -52,10 +52,10 @@ export const ProjectCard = (
             <CardHeader>
               <CardTitle
                 className={cn(
-                  "text-xl transition-colors duration-300",
-                  theme === "dark"
-                    ? "group-hover:text-lightGreen"
-                    : "group-hover:text-darkGreen"
+                  'text-xl transition-colors duration-300',
+                  theme === 'dark'
+                    ? 'group-hover:text-lightGreen'
+                    : 'group-hover:text-darkGreen'
                 )}
               >
                 {title}
@@ -101,13 +101,13 @@ export const ProjectCard = (
               </div>
             </CardContent>
             {!!stacks && (
-              <CardFooter>
+              <CardFooter className="flex flex-wrap mt-[-15px]">
                 {stacks.map((stack) => (
                   <Badge
                     variant="secondary"
                     className={cn(
-                      "mr-4 transition-colors duration-300",
-                      theme === "dark" ? "text-lightGreen" : "text-darkGreen"
+                      'mr-4 transition-colors duration-300  mt-2',
+                      theme === 'dark' ? 'text-lightGreen' : 'text-darkGreen'
                     )}
                     key={stack}
                   >

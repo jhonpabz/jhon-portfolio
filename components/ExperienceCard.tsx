@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { useTheme } from "next-themes";
+import { useTheme } from 'next-themes';
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "./ui/badge";
-import { cn } from "@/lib/utils";
-import { BaseNewTabLink } from "./base/BaseNewTabLink";
+} from '@/components/ui/card';
+import { Badge } from './ui/badge';
+import { cn } from '@/lib/utils';
+import { BaseNewTabLink } from './base/BaseNewTabLink';
 
 export const ExperienceCard = (
   props: ComponentsPropsNamespace.ExperienceCardProps
@@ -31,10 +31,10 @@ export const ExperienceCard = (
             <CardHeader>
               <CardTitle
                 className={cn(
-                  "text-xl transition-colors duration-300",
-                  theme === "dark"
-                    ? "group-hover:text-lightGreen"
-                    : "group-hover:text-darkGreen"
+                  'text-xl transition-colors duration-300',
+                  theme === 'dark'
+                    ? 'group-hover:text-lightGreen'
+                    : 'group-hover:text-darkGreen'
                 )}
               >
                 {title}
@@ -45,13 +45,13 @@ export const ExperienceCard = (
             </CardHeader>
 
             {!!stacks && (
-              <CardFooter>
+              <CardFooter className="flex flex-wrap mt-[-15px]">
                 {stacks.map((stack) => (
                   <Badge
                     variant="secondary"
                     className={cn(
-                      "mr-4 transition-colors duration-300",
-                      theme === "dark" ? "text-lightGreen" : "text-darkGreen"
+                      'mr-4 transition-colors duration-300 mt-2',
+                      theme === 'dark' ? 'text-lightGreen' : 'text-darkGreen'
                     )}
                     key={stack}
                   >
