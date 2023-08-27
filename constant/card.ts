@@ -1,5 +1,7 @@
 import Jhonshoppe from '@/assets/project-jhonshoppe-nuxt.jpg';
 import AIAssociate from '@/assets/project-ai-associate.jpg';
+import SecondPortfolio from '@/assets/project-second-portfolio.jpg';
+import FirstPortfolio from '@/assets/project-first-portfolio.jpg';
 
 export const projectsData = [
   {
@@ -19,6 +21,25 @@ export const projectsData = [
     image: AIAssociate,
     stacks: ['Next 13', 'React', 'Prisma', 'Tailwind', 'Clerk'],
     githubUrl: 'https://github.com/jhonpabz/ai-associate',
+  },
+  {
+    id: 3,
+    title: 'My Second Portfolio',
+    description:
+      'Clean and minimalist portfolio website design. I used (AOS) Animate on Scroll, Portfolio filtering, Bootstrap, CSS, and Javascript/jQuery.',
+    image: SecondPortfolio,
+    stacks: ['HTML', 'CSS', 'Bootstrap', 'Javascript', 'jQuery'],
+    siteUrl: 'https://jhon.netlify.app/',
+    githubUrl: 'https://github.com/jhonpabz/MyPortfolio2020',
+  },
+  {
+    id: 4,
+    title: 'My First Portfolio',
+    description:
+      'I created this website to showcase my skill as a fresh graduate of BSIT. I use the Bootstrap framework, CCS3 Keyframes animation, parallax effect, and Javascript.',
+    image: FirstPortfolio,
+    stacks: ['HTML', 'CSS', 'Bootstrap', 'Javascript', 'jQuery'],
+    siteUrl: 'https://jhoncesarpablo.netlify.app/',
   },
 ];
 
