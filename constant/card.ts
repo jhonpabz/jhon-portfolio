@@ -1,11 +1,11 @@
 import Jhonshoppe from '@/assets/project-jhonshoppe-nuxt.jpg';
+import AIAssociate from '@/assets/project-ai-associate.jpg';
 
 export const projectsData = [
   {
     id: 1,
-    title: 'JhonPabz',
+    title: 'JHONSHOPPE',
     description: 'E-commerce web app using Nuxt JS + Supabase Authentication.',
-    date: '2019 - 2022',
     image: Jhonshoppe,
     stacks: ['Vue', 'Nuxt Js', 'Typescript', 'Tailwind', 'Supabase '],
     siteUrl: 'https://jhonshoppe.netlify.app/',
@@ -13,46 +13,12 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: 'Test 2',
+    title: 'AI Associate',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    date: '2019 - 2022',
-    image: '/sample.jpg',
-    stacks: ['Vue', 'Nuxt Js', 'Tailwind'],
-    siteUrl: 'https://www.google.com/',
-    githubUrl: 'https://www.google.com/',
-  },
-  {
-    id: 3,
-    title: 'Test 3',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    date: '2019 - 2022',
-    image: '/sample.jpg',
-    siteUrl: 'https://www.google.com/',
-    githubUrl: 'https://www.google.com/',
-  },
-  {
-    id: 4,
-    title: 'Test 4',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    date: '2019 - 2022',
-    image: '/sample.jpg',
-    stacks: ['Zzxcv', 'Test1', 'Test2'],
-    siteUrl: 'https://www.google.com/',
-    githubUrl: 'https://www.google.com/',
-  },
-  {
-    id: 5,
-    title: 'Test 5',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    date: '2019 - 2022',
-    image: '/sample.jpg',
-    stacks: ['Zzxcv', 'Test1', 'Test2'],
-    siteUrl: 'https://www.google.com/',
-    githubUrl: 'https://www.google.com/',
+      'AI Associate with Next 13, React, Prisma, Tailwind, shad/cn UI. Authentication using Clerk and Open AI for API',
+    image: AIAssociate,
+    stacks: ['Next 13', 'React', 'Prisma', 'Tailwind', 'Clerk'],
+    githubUrl: 'https://github.com/jhonpabz/ai-associate',
   },
 ];
 

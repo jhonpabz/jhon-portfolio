@@ -14,7 +14,7 @@ export default function Home() {
         <Header />
       </div>
 
-      <div>
+      <div className="pb-[70px]">
         <div className="lg:py-24 mb-[60px] lg:mb-[0px]">
           <About />
         </div>

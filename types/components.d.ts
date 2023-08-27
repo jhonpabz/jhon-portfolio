@@ -10,7 +10,6 @@ declare namespace ComponentsPropsNamespace {
     imgSrc: string | StaticImageData;
     title: string;
     description: string;
-    date: string;
     stacks?: string[];
     siteUrl?: string;
     githubUrl?: string;

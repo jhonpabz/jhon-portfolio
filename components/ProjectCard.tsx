@@ -24,8 +24,7 @@ import { BaseNewTabLink } from './base/BaseNewTabLink';
 export const ProjectCard = (
   props: ComponentsPropsNamespace.ProjectCardProps
 ) => {
-  const { imgSrc, title, description, date, stacks, siteUrl, githubUrl } =
-    props;
+  const { imgSrc, title, description, stacks, siteUrl, githubUrl } = props;
   const { theme } = useTheme();
 
   return (
