@@ -23,7 +23,7 @@ export const ExperienceCard = (
       <BaseNewTabLink siteUrl={`${siteUrl}`}>
         <Card className="flex flex-col lg:flex-row md:flex-row  group-hover:bg-primary/10 transition-colors duration-200">
           <div className="md:basis-1/4">
-            <div className="pl-6 pt-8 w-[150px] text-primary/60 text-sm">
+            <div className="pl-6 pt-8 w-[150px] text-primary/50 text-sm">
               <p>{workPeriod}</p>
             </div>
           </div>

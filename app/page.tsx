@@ -18,7 +18,7 @@ export default function Home() {
           <About />
         </div>
 
-        <Divider label="Test" />
+        <Divider label="Experience" />
 
         {experienceData.map((exp) => (
           <ExperienceCard
@@ -30,7 +30,8 @@ export default function Home() {
             siteUrl={exp.siteUrl}
           />
         ))}
-        <Divider label="Test" />
+
+        <Divider label="Projects" />
 
         {projectsData.map((project) => (
           <ProjectCard

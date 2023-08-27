@@ -58,7 +58,7 @@ export const projectsData = [
 export const experienceData = [
   {
     workPeriod: 'JUNE 2023 — PRESENT',
-    title: 'Front End Developer • SK Innovative Group (PHI)',
+    title: 'Front End Developer • SK Innovative Group (PHILTECH)',
     description:
       'Develop, maintain, and test new and existing projects using React, Nextjs, Nuxtjs, Vue, Es6 Javascript, Tailwind, CSS, Sass.',
     date: '2019 - 2022',
@@ -72,7 +72,8 @@ export const experienceData = [
       'CSS',
       'Sass',
     ],
-    siteUrl: 'https://www.google.com/',
+    siteUrl:
+      'https://www.linkedin.com/company/philtech-info-service-inc/mycompany/',
   },
   {
     workPeriod: 'MARCH 2022 — JUNE 2023',
