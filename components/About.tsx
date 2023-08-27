@@ -5,16 +5,16 @@ export const About = () => {
       <p className="text-lg text-primary">About</p>
 
       <p className="text-sm text-primary/60 mt-3">
-        Back in 2016, during my second year of college as an IT there was a
-        subject introduced to us which is Web Design and Client Side Coding. We
-        are introduced to a fundamental which is HTML, CSS, and javascript. I
-        was so hooked and researched more about it on the Internet when I got
-        home. There was a time when our professor thought that my project was a
-        template/downloaded to the internet. Thats the time my passion with
-        coding starts. When there is a group project my classmates always pick
-        me as a leader/programmer. I create an app using Android Studio and also
-        our Thesis/Capstone project which is created in HTML, CSS, Javascript,
-        PHP, and MySQL.
+        Back in 2016, during my second year of college as an IT student, there
+        was a subject introduced to us which is Web Design and Client Side
+        Coding. We learn fundamentals which are HTML, CSS, and javascript. I was
+        so hooked and researched more about it on the Internet. There was a time
+        when our professor thought that my project was a template/downloaded to
+        the internet because of how it looked. That was the time my passion for
+        coding starts. Whenever there is a group project my classmates always
+        pick me as a leader/programmer. I create an app using Android Studio and
+        also our Thesis/Capstone project which is created in HTML, CSS,
+        Javascript, PHP, and MySQL.
       </p>
 
       <p className="text-sm text-primary/60 mt-3">
