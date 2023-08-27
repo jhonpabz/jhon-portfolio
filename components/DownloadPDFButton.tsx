@@ -1,20 +1,16 @@
 'use client';
 
 import { Button } from './ui/button';
-import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 const DownloadPDFButton = () => {
   const handleDownload = () => {
-    // Construct the URL to the PDF file
-    const pdfUrl = '/Jhon-Cesar-Pablo-Resume.pdf';
+    const pdfUrl = '/Jhon_Cesar_Pablo-Resume.pdf';
 
-    // Create a temporary anchor element
     const anchor = document.createElement('a');
     anchor.href = pdfUrl;
-    anchor.download = 'Jhon-Cesar-Pablo-Resume.pdf';
+    anchor.download = 'Jhon_Cesar_Pablo-Resume.pdf';
 
-    // Trigger a click event on the anchor element
     anchor.click();
   };
 
