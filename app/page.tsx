@@ -1,10 +1,10 @@
-import { About } from "@/components/About";
-import { Divider } from "@/components/Divider";
-import { Header } from "@/components/Header";
-import { ProjectCard } from "@/components/ProjectCard";
-import { ExperienceCard } from "@/components/ExperienceCard";
-import { ViewMoreLink } from "@/components/ViewMoreLink";
-import { experienceData, projectsData } from "@/constant/card";
+import { About } from '@/components/About';
+import { Divider } from '@/components/Divider';
+import { Header } from '@/components/Header';
+import { ProjectCard } from '@/components/ProjectCard';
+import { ExperienceCard } from '@/components/ExperienceCard';
+import { ViewMoreLink } from '@/components/ViewMoreLink';
+import { experienceData, projectsData } from '@/constant/card';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div>
-        <div className="lg:py-24">
+        <div className="lg:py-24 mb-[60px] lg:mb-[0px]">
           <About />
         </div>
 
