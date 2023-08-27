@@ -56,6 +56,7 @@ export const experienceData = [
       'Nuxtjs',
       'Vue',
       'Typescript',
+      'Pinia',
       'Tailwind',
       'CSS',
       'Sass',
