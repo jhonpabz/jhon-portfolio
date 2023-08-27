@@ -48,10 +48,12 @@ export default function Home() {
             githubUrl={project.githubUrl}
           />
         ))}
-        <Divider label="Test" />
-      </div>
 
-      <ViewMoreLink label="Google" link="https://www.google.com/" />
+        <ViewMoreLink
+          label="View More Projects"
+          link="https://github.com/jhonpabz?tab=repositories"
+        />
+      </div>
     </main>
   );
 }
