@@ -28,11 +28,12 @@ export const About = () => {
       </p>
 
       <p className="text-sm text-primary/60 mt-3">
-        Thats why I applied for my second job as a Associate Software Engineer
-        in FLIGNO. We create web apps and 99% of our clients here is from
-        Australia. All of the project I involved in my role is Focuses on my
-        strength which is Front end Developer. We use React, Redux, React Query,
-        Zustand, Material UI, Tailwind and other new technologies for Front-end.
+        That's why I applied for my second job as a Associate Software Engineer
+        in Fligno Software Philippines Inc. We create web apps for for clients
+        and stakeholders(99% of our clients here is from Australia). All of the
+        project I assigned with, my main role is focuses on my strength which is
+        Front end Developer. We use React, Redux, React Query, Zustand, Material
+        UI, Tailwind and other new technologies for Front-end.
       </p>
       <p className="text-sm text-primary/60 mt-3">
         Today I'm currently working as a Front-end developer in PHILTECH here at
