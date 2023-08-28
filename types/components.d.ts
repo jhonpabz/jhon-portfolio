@@ -23,4 +23,8 @@ declare namespace ComponentsPropsNamespace {
     siteUrl?: string;
     githubUrl?: string;
   };
+
+  type DividerProps = React.HTMLAttributes<HTMLDivElement> & {
+    label: string;
+  };
 }
