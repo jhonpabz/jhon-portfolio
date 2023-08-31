@@ -7,3 +7,12 @@ declare type Projects = {
   siteUrl?: string;
   githubUrl?: string;
 };
+
+declare type Experience = {
+  workPeriod: string;
+  title: string;
+  description: string;
+  date: string;
+  stacks: string[];
+  siteUrl?: string;
+};

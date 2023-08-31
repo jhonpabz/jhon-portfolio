@@ -43,7 +43,7 @@ export const projectsData: Projects[] = [
   },
 ];
 
-export const experienceData = [
+export const experienceData: Experience[] = [
   {
     workPeriod: "JUNE 2023 — PRESENT",
     title: "Front End Developer • SK Innovative Group (PHILTECH)",
