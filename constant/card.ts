@@ -1,96 +1,96 @@
-import Jhonshoppe from '@/assets/project-jhonshoppe-nuxt.jpg';
-import AIAssociate from '@/assets/project-ai-associate.jpg';
-import SecondPortfolio from '@/assets/project-second-portfolio.jpg';
-import FirstPortfolio from '@/assets/project-first-portfolio.jpg';
+import Jhonshoppe from "@/assets/project-jhonshoppe-nuxt.jpg";
+import AIAssociate from "@/assets/project-ai-associate.jpg";
+import SecondPortfolio from "@/assets/project-second-portfolio.jpg";
+import FirstPortfolio from "@/assets/project-first-portfolio.jpg";
 
-export const projectsData = [
+export const projectsData: Projects[] = [
   {
     id: 1,
-    title: 'JHONSHOPPE',
-    description: 'E-commerce web app using Nuxt JS + Supabase Authentication.',
+    title: "JHONSHOPPE",
+    description: "E-commerce web app using Nuxt JS + Supabase Authentication.",
     image: Jhonshoppe,
-    stacks: ['Vue', 'Nuxt Js', 'Typescript', 'Tailwind', 'Supabase '],
-    siteUrl: 'https://jhonshoppe.netlify.app/',
-    githubUrl: 'https://github.com/jhonpabz/jhonshoppe',
+    stacks: ["Vue", "Nuxt Js", "Typescript", "Tailwind", "Supabase "],
+    siteUrl: "https://jhonshoppe.netlify.app/",
+    githubUrl: "https://github.com/jhonpabz/jhonshoppe",
   },
   {
     id: 2,
-    title: 'AI Associate',
+    title: "AI Associate",
     description:
-      'AI Associate with Next 13, React, Prisma, Tailwind, shad/cn UI. Authentication using Clerk and Open AI for API',
+      "AI Associate with Next 13, React, Prisma, Tailwind, shad/cn UI. Authentication using Clerk and Open AI for API",
     image: AIAssociate,
-    stacks: ['Next 13', 'React', 'Prisma', 'Tailwind', 'Clerk'],
-    githubUrl: 'https://github.com/jhonpabz/ai-associate',
+    stacks: ["Next 13", "React", "Prisma", "Tailwind", "Clerk"],
+    githubUrl: "https://github.com/jhonpabz/ai-associate",
   },
   {
     id: 3,
-    title: 'My Second Portfolio',
+    title: "My Second Portfolio",
     description:
-      'Clean and minimalist portfolio website design. I used (AOS) Animate on Scroll, Portfolio filtering, Bootstrap, CSS, and Javascript/jQuery.',
+      "Clean and minimalist portfolio website design. I used (AOS) Animate on Scroll, Portfolio filtering, Bootstrap, CSS, and Javascript/jQuery.",
     image: SecondPortfolio,
-    stacks: ['HTML', 'CSS', 'Bootstrap', 'Javascript', 'jQuery'],
-    siteUrl: 'https://jhon.netlify.app/',
-    githubUrl: 'https://github.com/jhonpabz/MyPortfolio2020',
+    stacks: ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"],
+    siteUrl: "https://jhon.netlify.app/",
+    githubUrl: "https://github.com/jhonpabz/MyPortfolio2020",
   },
   {
     id: 4,
-    title: 'My First Portfolio',
+    title: "My First Portfolio",
     description:
-      'I created this website to showcase my skill as a fresh graduate of BSIT. I use the Bootstrap framework, CCS3 Keyframes animation, parallax effect, and Javascript.',
+      "I created this website to showcase my skill as a fresh graduate of BSIT. I use the Bootstrap framework, CCS3 Keyframes animation, parallax effect, and Javascript.",
     image: FirstPortfolio,
-    stacks: ['HTML', 'CSS', 'Bootstrap', 'Javascript', 'jQuery'],
-    siteUrl: 'https://jhoncesarpablo.netlify.app/',
+    stacks: ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"],
+    siteUrl: "https://jhoncesarpablo.netlify.app/",
   },
 ];
 
-export const experienceData = [
+export const experienceData: Experience[] = [
   {
-    workPeriod: 'JUNE 2023 — PRESENT',
-    title: 'Front End Developer • SK Innovative Group (PHILTECH)',
+    workPeriod: "JUNE 2023 — PRESENT",
+    title: "Front End Developer • SK Innovative Group (PHILTECH)",
     description:
-      'Develop, maintain, and test new and existing projects using React, Nextjs, Nuxtjs, Vue, Es6 Javascript, Tailwind, CSS, Sass.',
-    date: '2019 - 2022',
+      "Develop, maintain, and test new and existing projects using React, Nextjs, Nuxtjs, Vue, Es6 Javascript, Tailwind, CSS, Sass.",
+    date: "2019 - 2022",
     stacks: [
-      'Nextjs',
-      'React',
-      'Nuxtjs',
-      'Vue',
-      'Typescript',
-      'Pinia',
-      'Tailwind',
-      'CSS',
-      'Sass',
+      "Nextjs",
+      "React",
+      "Nuxtjs",
+      "Vue",
+      "Typescript",
+      "Pinia",
+      "Tailwind",
+      "CSS",
+      "Sass",
     ],
     siteUrl:
-      'https://www.linkedin.com/company/philtech-info-service-inc/mycompany/',
+      "https://www.linkedin.com/company/philtech-info-service-inc/mycompany/",
   },
   {
-    workPeriod: 'MARCH 2022 — JUNE 2023',
-    title: 'Associate Software Engineer • Fligno Software Philippines Inc',
+    workPeriod: "MARCH 2022 — JUNE 2023",
+    title: "Associate Software Engineer • Fligno Software Philippines Inc",
     description:
-      'Design, develop, and test new and existing projects using the latest technologies(React). Apply best practice development patterns and follow design briefs, Continuous Integration/Development, and maintenance of code.',
-    date: '2019 — 2022',
+      "Design, develop, and test new and existing projects using the latest technologies(React). Apply best practice development patterns and follow design briefs, Continuous Integration/Development, and maintenance of code.",
+    date: "2019 — 2022",
     stacks: [
-      'React',
-      'Typescript',
-      'Next JS',
-      'Node',
-      'Express',
-      'MongoDB',
-      'Redux',
-      'Zustand',
-      'Material UI',
-      'Tailwind',
+      "React",
+      "Typescript",
+      "Next JS",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Redux",
+      "Zustand",
+      "Material UI",
+      "Tailwind",
     ],
-    siteUrl: 'https://fligno.com/',
+    siteUrl: "https://fligno.com/",
   },
   {
-    workPeriod: 'AUGUST 2019 — FEB 2022',
-    title: 'Web Designer/Developer • Directories Philippines Corporation',
+    workPeriod: "AUGUST 2019 — FEB 2022",
+    title: "Web Designer/Developer • Directories Philippines Corporation",
     description:
-      'Creation of content for client websites, as well as creation of visual elements that are aligned with client’s branding and defined site objectives using HTML, CSS, Javascript, and Jquery.',
-    date: '2019 - 2022',
-    stacks: ['HTML', 'CSS', 'Javascript', 'JQuery'],
-    siteUrl: 'https://www.dpc.ph/',
+      "Creation of content for client websites, as well as creation of visual elements that are aligned with client’s branding and defined site objectives using HTML, CSS, Javascript, and Jquery.",
+    date: "2019 - 2022",
+    stacks: ["HTML", "CSS", "Javascript", "JQuery"],
+    siteUrl: "https://www.dpc.ph/",
   },
 ];
