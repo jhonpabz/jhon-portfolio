@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react';
 
 const DownloadPDFButton = () => {
   const handleDownload = () => {
-    const pdfUrl = '/Jhon_Cesar_Pablo-Resume.pdf';
+    const pdfUrl = '/JhonCesarPablo-Resume.pdf';
 
     const anchor = document.createElement('a');
     anchor.href = pdfUrl;
-    anchor.download = 'Jhon_Cesar_Pablo-Resume.pdf';
+    anchor.download = 'JhonCesarPablo-Resume.pdf';
 
     anchor.click();
   };
