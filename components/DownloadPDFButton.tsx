@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { Button } from './ui/button';
-import { ArrowRight } from 'lucide-react';
+import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const DownloadPDFButton = () => {
   const handleDownload = () => {
-    const pdfUrl = '/JhonCesarPablo_Resume.pdf';
+    const pdfUrl = "/Jhon_Cesar_Pablo-Resume.pdf";
 
-    const anchor = document.createElement('a');
+    const anchor = document.createElement("a");
     anchor.href = pdfUrl;
-    anchor.download = 'JhonCesarPablo_Resume.pdf';
+    anchor.download = "Jhon_Cesar_Pablo-Resume.pdf";
 
     anchor.click();
   };
