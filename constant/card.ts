@@ -1,9 +1,26 @@
+import FilbetNextJs from "@/assets/project-filbet-nextjs.png";
 import Jhonshoppe from "@/assets/project-jhonshoppe-nuxt.jpg";
 import AIAssociate from "@/assets/project-ai-associate.jpg";
 import SecondPortfolio from "@/assets/project-second-portfolio.jpg";
 import FirstPortfolio from "@/assets/project-first-portfolio.jpg";
 
 export const projectsData: Projects[] = [
+  {
+    id: 5,
+    title: "Filbet Next JS",
+    description:
+      "Online Casino/Betting site using React, Next JS, Typescript, Redux Toolkit, Tailwind, and React Hook Form.",
+    image: FilbetNextJs,
+    stacks: [
+      "React",
+      "Next JS",
+      "Typescript",
+      "Redux",
+      "Tailwind",
+      "React Hook Form ",
+    ],
+    siteUrl: "https://nextjs.filbet.dev/",
+  },
   {
     id: 1,
     title: "JHONSHOPPE",
