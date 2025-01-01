@@ -5,39 +5,62 @@ export const About = () => {
       <p className="text-lg text-primary">About</p>
 
       <p className="text-sm text-primary/60 mt-3">
-        Back in 2016, during my second year of college as an IT student, there
-        was a course introduced to us which is Web Design and Client Side
-        Coding. We learn fundamentals which are HTML, CSS, and javascript. I was
-        so hooked and researched more about it on the internet. There was a time
-        when our professor thought my project was a template/downloaded to the
-        internet because of how it looked. That was the time my passion for
-        coding started. Whenever there's a group project, my classmates always
-        pick me as a leader/programmer. I created an application using Android
-        Studio, our Thesis/Capstone project using HTML, CSS, Javascript, PHP,
-        and MySQL.
+        Hi, I’m Jhon Cesar Pablo, a front-end developer with over 5 years of
+        experience and a deep passion for crafting dynamic, user-friendly
+        applications. My expertise spans React, HTML, CSS, JavaScript, and
+        TypeScript, along with popular libraries and frameworks like Vue,
+        Next.js, and Nuxt.js.
       </p>
 
       <p className="text-sm text-primary/60 mt-3">
-        After I graduated in 2019, I applied and got my first job as a Web
-        Designer at Directories Philippines Corporation. My work there is to
-        create a website for Small and Medium-Scale Enterprises(SMSE) here in
-        the Philippines using HTML, CSS, Javascript, and JQuery. There was a
-        time when my manager gave me a project, the BAVA Vehicle Registration
-        System. I completed it and felt so happy. I want to return to building
-        web applications and have a more challenging job.
+        I specialize in creating responsive designs using Flexbox, GRID,
+        SASS/SCSS, and modern UI libraries such as Tailwind CSS, Material UI,
+        Daisy UI, Ant Design, and Styled Components. My skill set also includes
+        state management tools like Redux, Zustand, and Jotai, as well as
+        testing with JEST.
       </p>
 
       <p className="text-sm text-primary/60 mt-3">
-        That's why I applied for my second job as an Associate Software Engineer
-        at Fligno Software Philippines Inc. We create web applications for
-        clients and stakeholders(99% of our clients here are from Australia). In
-        all of the projects I was assigned, my role was more focused on my
-        strength which was Front-end. We use React, Redux, React Query, Zustand,
-        Material UI, Tailwind, and other new technologies for the Front-end.
+        While front-end development is my focus, I am also proficient in
+        back-end technologies like NodeJS, ExpressJS, MongoDB, PHP, Laravel, and
+        MySQL.
       </p>
+
       <p className="text-sm text-primary/60 mt-3">
-        Today, I'm currently working as a Front-end developer in PHILTECH here
-        at Makati. We create web apps using Nextjs, React, and Nuxtjs/Vuejs.
+        Throughout my career, I have contributed to various impactful projects:
+      </p>
+
+      <p className="text-sm text-primary/60 mt-3">
+        At Fun J. Software Development Corp., I developed and maintained React
+        and Vue applications, migrated platforms, created features, and resolved
+        bugs while collaborating closely with cross-functional teams.
+      </p>
+
+      <p className="text-sm text-primary/60 mt-3">
+        At Philtech Info Services Inc., I successfully created a complete
+        project from scratch using Next.js. This involved designing and
+        implementing a robust project architecture, building reusable React
+        components, integrating APIs, configuring Redux/Thunk for efficient
+        state management, and ensuring high code quality by sharing best
+        practices with co-developers.
+      </p>
+
+      <p className="text-sm text-primary/60 mt-3">
+        At Fligno Software Philippines Inc., I transformed creative concepts
+        into production-ready solutions for projects like Hyperspace Storage,
+        Spek, HRIS, and State Planning.
+      </p>
+
+      <p className="text-sm text-primary/60 mt-3">
+        Earlier roles at Directories Philippines Corporation (DPC) and One
+        Hundred Services Inc. involved creating and customizing websites with
+        CMS platforms and enhancing digital assets.
+      </p>
+
+      <p className="text-sm text-primary/60 mt-3">
+        I am committed to continuous learning and innovation, always eager to
+        explore new technologies and elevate the user experience. My dedication
+        to excellence makes me a valuable asset to any development team.
       </p>
     </div>
   );

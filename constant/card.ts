@@ -62,8 +62,29 @@ export const projectsData: Projects[] = [
 
 export const experienceData: Experience[] = [
   {
-    workPeriod: "JUNE 2023 — PRESENT",
-    title: "Front End Developer • SK Innovative Group (PHILTECH)",
+    workPeriod: "APRIL 2024 — PRESENT",
+    title: "Front End Developer • Fun J. Software Development Corp.",
+    description:
+      "Develop and maintain existing/new projects (React Web Admins, Vue Web app, H5 app, and Landing page) using React JS, Vue JS, Javascript, Typescript, Redux, HTML, CSS, SASS, Ant Design, Rest API’s, WebSocket, Jenkins, etc.",
+    date: "2019 - 2022",
+    stacks: [
+      "Javascript",
+      "Typescript",
+      "Nextjs",
+      "React",
+      "Vue",
+      "WebSocket",
+      "Ant Design",
+      "Tailwind",
+      "CSS",
+      "Sass",
+    ],
+    siteUrl:
+      "https://www.linkedin.com/company/philtech-info-service-inc/mycompany/",
+  },
+  {
+    workPeriod: "JUNE 2023 — APRIL 2024",
+    title: "Front End Developer • PHILTECH Info Services Inc.",
     description:
       "Develop, maintain, and test new and existing projects using React, Nextjs, Nuxtjs, Vue, Es6 Javascript, Tailwind, CSS, Sass.",
     date: "2019 - 2022",
