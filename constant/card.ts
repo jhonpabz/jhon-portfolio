@@ -80,7 +80,7 @@ export const experienceData: Experience[] = [
       "Sass",
     ],
     siteUrl:
-      "https://www.linkedin.com/company/philtech-info-service-inc/mycompany/",
+      "https://www.linkedin.com/in/fun-j-software-development-4604782a8/",
   },
   {
     workPeriod: "JUNE 2023 — APRIL 2024",
