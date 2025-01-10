@@ -1,3 +1,5 @@
+import ChangeGPS from "@/assets/project-change-gps.png";
+import Hyperspace from "@/assets/project-hyperspace-storage.png";
 import FilbetNextJs from "@/assets/project-filbet-nextjs.png";
 import Jhonshoppe from "@/assets/project-jhonshoppe-nuxt.jpg";
 import AIAssociate from "@/assets/project-ai-associate.jpg";
@@ -6,7 +8,7 @@ import FirstPortfolio from "@/assets/project-first-portfolio.jpg";
 
 export const projectsData: Projects[] = [
   {
-    id: 11,
+    id: 6,
     title: "Web Admin",
     description:
       "A React Web Admin Panel for online casinos enables seamless management of players, games, payments, and promotions with a secure, responsive interface. Built with React.js and Ant Design, it ensures efficient, real-time operations.",
@@ -39,6 +41,31 @@ export const projectsData: Projects[] = [
     ],
     // siteUrl: "https://nextjs.filbet.dev/",
     siteUrl: "https://filbet.com/",
+  },
+  {
+    id: 7,
+    title: "Estate Planning (changegps.com.au)",
+    description: "A new feature of a big accounting software in Australia.",
+    image: ChangeGPS,
+
+    stacks: [
+      "React Vite",
+      "React Query",
+      "Zustand",
+      "Material UI",
+      "React Hook Form",
+      "Laravel",
+    ],
+    siteUrl: "https://changegps.com.au/",
+  },
+  {
+    id: 7,
+    title: "HYPERSPACE Storage",
+    description:
+      "This app is like AirBNB for storages. I created the web admin part of the application",
+    image: Hyperspace,
+
+    stacks: ["React", "Redux", "Material UI", "NodeJs", "ExpressJs", "MongoDB"],
   },
   {
     id: 1,
