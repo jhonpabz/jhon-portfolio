@@ -11,8 +11,9 @@ declare namespace ComponentsPropsNamespace {
     title: string;
     description: string;
     stacks?: string[];
-    siteUrl?: string;
+    siteUrl?: string | null;
     githubUrl?: string;
+    video?: string;
   };
 
   type ExperienceCardProps = React.HTMLAttributes<HTMLDivElement> & {

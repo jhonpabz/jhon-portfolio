@@ -3,6 +3,7 @@ declare type Projects = {
   title: string;
   description: string;
   image: Jhonshoppe;
+  video?: string;
   stacks: string[];
   siteUrl?: string;
   githubUrl?: string;
@@ -16,3 +17,8 @@ declare type Experience = {
   stacks: string[];
   siteUrl?: string;
 };
+
+declare module '*.mov' {
+  const src: string;
+  export default src;
+}
