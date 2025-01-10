@@ -6,11 +6,29 @@ import FirstPortfolio from "@/assets/project-first-portfolio.jpg";
 
 export const projectsData: Projects[] = [
   {
+    id: 11,
+    title: "Web Admin",
+    description:
+      "A React Web Admin Panel for online casinos enables seamless management of players, games, payments, and promotions with a secure, responsive interface. Built with React.js and Ant Design, it ensures efficient, real-time operations.",
+    image: FilbetNextJs,
+    video: "/videos/web-admin.mov",
+    stacks: [
+      "React",
+      "Typescript",
+      "UMI",
+      "useContext",
+      "Ant Design",
+      "Java",
+      "Jenkins",
+    ],
+  },
+  {
     id: 5,
     title: "Filbet Next JS",
     description:
       "Online Casino/Betting site using React, Next JS, Typescript, Redux Toolkit, Tailwind, and React Hook Form.",
     image: FilbetNextJs,
+
     stacks: [
       "React",
       "Next JS",
@@ -19,7 +37,8 @@ export const projectsData: Projects[] = [
       "Tailwind",
       "React Hook Form ",
     ],
-    siteUrl: "https://nextjs.filbet.dev/",
+    // siteUrl: "https://nextjs.filbet.dev/",
+    siteUrl: "https://filbet.com/",
   },
   {
     id: 1,

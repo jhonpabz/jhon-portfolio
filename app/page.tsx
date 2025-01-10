@@ -45,6 +45,7 @@ export default function Home() {
             stacks={project.stacks}
             siteUrl={project.siteUrl}
             githubUrl={project.githubUrl}
+            video={project.video}
           />
         ))}
 
