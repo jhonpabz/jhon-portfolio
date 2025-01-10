@@ -19,7 +19,8 @@ export const projectsData: Projects[] = [
       "Tailwind",
       "React Hook Form ",
     ],
-    siteUrl: "https://nextjs.filbet.dev/",
+    // siteUrl: "https://nextjs.filbet.dev/",
+    siteUrl: "https://filbet.com/",
   },
   {
     id: 1,
