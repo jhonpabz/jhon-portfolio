@@ -58,9 +58,9 @@ export const About = () => {
       </p>
 
       <p className="text-sm text-primary/60 mt-3">
-        I am committed to continuous learning and innovation, always eager to
-        explore new technologies and elevate the user experience. My dedication
-        to excellence makes me a valuable asset to any development team.
+        I am passionate about continuous learning and innovation, with a strong
+        work ethic and integrity. I'm dedicated to delivering high-quality
+        results, making me a valuable asset to any development team.
       </p>
     </div>
   );
