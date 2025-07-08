@@ -3,7 +3,7 @@ import Hyperspace from "@/assets/project-hyperspace-storage.png";
 import FilbetNextJs from "@/assets/project-filbet-nextjs.png";
 import Jhonshoppe from "@/assets/project-jhonshoppe-nuxt.jpg";
 import AIAssociate from "@/assets/project-ai-associate.jpg";
-import NetWorthTracker from "@/assets/project-networth.png";
+import NetWorthTracker from "@/assets/project-networth.jpg";
 import SecondPortfolio from "@/assets/project-second-portfolio.jpg";
 import FirstPortfolio from "@/assets/project-first-portfolio.jpg";
 
