@@ -3,6 +3,7 @@ import Hyperspace from "@/assets/project-hyperspace-storage.png";
 import FilbetNextJs from "@/assets/project-filbet-nextjs.png";
 import Jhonshoppe from "@/assets/project-jhonshoppe-nuxt.jpg";
 import AIAssociate from "@/assets/project-ai-associate.jpg";
+import NetWorthTracker from "@/assets/project-networth.png";
 import SecondPortfolio from "@/assets/project-second-portfolio.jpg";
 import FirstPortfolio from "@/assets/project-first-portfolio.jpg";
 
@@ -84,6 +85,16 @@ export const projectsData: Projects[] = [
     image: AIAssociate,
     stacks: ["Next 13", "React", "Prisma", "Tailwind", "Clerk"],
     githubUrl: "https://github.com/jhonpabz/ai-associate",
+  },
+    {
+    id: 2.1,
+    title: "Net Worth Tracker App",
+    description:
+      "Net Worth Tracker is a sleek PWA that lets you track your savings across multiple accounts with customizable cards. Use it offline on your mobile like a real app—simple, modern, and built for clarity.",
+    image: NetWorthTracker,
+    stacks: ["React", "Typescript", "Tailwind"],
+    siteUrl: "https://networth-tracker-app.vercel.app/",
+    githubUrl: "https://github.com/jhonpabz/networth-tracker-app",
   },
   {
     id: 3,
