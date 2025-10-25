@@ -1,4 +1,5 @@
 import { About } from '@/components/About';
+import { Video } from '@/components/Video';
 import { Divider } from '@/components/Divider';
 import { Header } from '@/components/Header';
 import { ProjectCard } from '@/components/ProjectCard';
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="pb-[70px]">
         <div className="lg:py-24 mb-[60px] lg:mb-[0px]">
           <About />
+          <Video />
         </div>
 
         <Divider label="Experience" />
