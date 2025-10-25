@@ -5,10 +5,8 @@ export const BaseNewTabLink = (
 ) => {
   const { siteUrl, children, style } = props;
   return (
-    <Link href={siteUrl} legacyBehavior>
-      <a target="_blank" rel="noopener noreferrer" className={style}>
-        {children}
-      </a>
+    <Link href={siteUrl} target="_blank" rel="noopener noreferrer" className={style}>
+      {children}
     </Link>
   );
 };

@@ -60,7 +60,7 @@ export const projectsData: Projects[] = [
     siteUrl: "https://changegps.com.au/",
   },
   {
-    id: 7,
+    id: 7.2,
     title: "HYPERSPACE Storage",
     description:
       "This app is like AirBNB for storages. I created the web admin part of the application",

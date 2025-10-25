@@ -17,8 +17,8 @@ export default function Home() {
 
       <div className="pb-[70px]">
         <div className="lg:py-24 mb-[60px] lg:mb-[0px]">
-          <About />
           <Video />
+          <About />          
         </div>
 
         <Divider label="Experience" />

@@ -5,7 +5,7 @@ export const Video = () => {
         className="w-full h-auto rounded-lg shadow-lg"
         controls
         preload="metadata"
-        poster="/jhon-pic.jpg"
+        poster="/jhon-poster.jpg"
       >
         <source src="/videos/about-me-dev.mov" type="video/mp4" />
         <source src="/videos/about-me-dev.mov" type="video/quicktime" />
