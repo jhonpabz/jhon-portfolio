@@ -54,7 +54,7 @@ export const MobileNav = () => {
             className="mobile-nav-tab"
             aria-current={active === id ? "location" : undefined}
           >
-            <Icon size={23} strokeWidth={1.8} aria-hidden="true" />
+            <Icon size={20} strokeWidth={1.8} aria-hidden="true" />
             <span>{label}</span>
           </a>
         ))}
