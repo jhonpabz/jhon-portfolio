@@ -36,7 +36,7 @@ export default function Home() {
 
         <DownloadPDFButton />
 
-        <Divider label="Projects" />
+        <Divider label="Project Highligts" />
 
         {projectsData.map((project) => (
           <ProjectCard

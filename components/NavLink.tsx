@@ -86,7 +86,7 @@ export const NavLink = () => {
             currentSection === "projects" && "text-primary"
           )}
         >
-          Projects
+          Project Highligts
         </Link>
       </div>
     </div>
