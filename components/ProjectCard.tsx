@@ -2,7 +2,6 @@
 
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import {
   Card,
   CardContent,
@@ -20,14 +19,15 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { BaseNewTabLink } from "./base/BaseNewTabLink";
-import ReactPlayer from "react-player";
+import dynamic from "next/dynamic";
+
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export const ProjectCard = (
   props: ComponentsPropsNamespace.ProjectCardProps
 ) => {
   const { imgSrc, title, description, stacks, siteUrl, githubUrl, video } =
     props;
-  const { theme } = useTheme();
 
   return (
     <div id="projects" className="group py-2">
@@ -51,9 +51,7 @@ export const ProjectCard = (
                 height={400}
                 className={cn(
                   "rounded-lg border-2 transition-colors duration-300 min-w-[150px]",
-                  theme === "dark"
-                    ? "group-hover:border-lightGreen"
-                    : "group-hover:border-darkGreen"
+                  "group-hover:border-darkGreen dark:group-hover:border-lightGreen"
                 )}
               />
             )}
@@ -64,16 +62,12 @@ export const ProjectCard = (
             <CardTitle
               className={cn(
                 "text-xl transition-colors duration-300",
-                theme === "dark"
-                  ? "group-hover:text-lightGreen"
-                  : "group-hover:text-darkGreen"
+                "group-hover:text-darkGreen dark:group-hover:text-lightGreen"
               )}
             >
               {title}
             </CardTitle>
-            <CardDescription>
-              <div className="mt-1">{description}</div>
-            </CardDescription>
+            <CardDescription className="mt-1">{description}</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="flex">
@@ -114,7 +108,7 @@ export const ProjectCard = (
                   variant="secondary"
                   className={cn(
                     "mr-4 transition-colors duration-300  mt-2",
-                    theme === "dark" ? "text-lightGreen" : "text-darkGreen"
+                    "text-darkGreen dark:text-lightGreen"
                   )}
                   key={stack}
                 >

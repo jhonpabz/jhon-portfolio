@@ -9,7 +9,7 @@ import { Socials } from './Socials';
 import { NavLink } from './NavLink';
 
 export const Header = () => {
-  const { setTheme, theme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   return (
     <div className="py-14 lg:py-24 lg:h-screen">
@@ -22,7 +22,8 @@ export const Header = () => {
         </div>
         <div>
           <Button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            aria-label="Toggle theme"
+            onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
             variant="ghost"
             size="icon"
           >
@@ -37,7 +38,7 @@ export const Header = () => {
           <p
             className={cn(
               'text-4xl font-bold',
-              theme === 'dark' ? 'text-[#5EEAD4]' : 'text-[#207d6f]'
+              'text-darkGreen dark:text-lightGreen'
             )}
           >
             Jhon Cesar Pablo

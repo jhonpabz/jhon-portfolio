@@ -1,11 +1,9 @@
 import { Facebook, Github, Linkedin } from "lucide-react";
-import { useTheme } from "next-themes";
 
 import { cn } from "@/lib/utils";
 import { BaseNewTabLink } from "./base/BaseNewTabLink";
 
 export const Socials = () => {
-  const { theme } = useTheme();
   return (
     <div className="flex gap-4 text-primary/60 mt-6 cursor-pointer">
       <BaseNewTabLink
@@ -15,7 +13,7 @@ export const Socials = () => {
         <Linkedin
           className={cn(
             "transition-colors duration-200",
-            theme === "dark" ? "hover:text-lightGreen" : "hover:text-darkGreen"
+            "hover:text-darkGreen dark:hover:text-lightGreen"
           )}
         />
       </BaseNewTabLink>
@@ -24,7 +22,7 @@ export const Socials = () => {
         <Github
           className={cn(
             "transition-colors duration-200",
-            theme === "dark" ? "hover:text-lightGreen" : "hover:text-darkGreen"
+            "hover:text-darkGreen dark:hover:text-lightGreen"
           )}
         />
       </BaseNewTabLink>
@@ -36,7 +34,7 @@ export const Socials = () => {
         <Facebook
           className={cn(
             "transition-colors duration-200",
-            theme === "dark" ? "hover:text-lightGreen" : "hover:text-darkGreen"
+            "hover:text-darkGreen dark:hover:text-lightGreen"
           )}
         />
       </BaseNewTabLink>
