@@ -18,9 +18,7 @@ export const ExperienceCard = (
   const { workPeriod, title, description, stacks, siteUrl } = props;
   const { theme } = useTheme();
 
-  return (
-    <div id="experience" className="group cursor-pointer py-2">
-      <BaseNewTabLink siteUrl={`${siteUrl}`}>
+  const card = (
         <Card className="flex flex-col lg:flex-row md:flex-row  group-hover:bg-primary/10 transition-colors duration-200">
           <div className="md:basis-1/4">
             <div className="pl-6 pt-8 w-[150px] text-primary/50 text-sm">
@@ -62,7 +60,11 @@ export const ExperienceCard = (
             )}
           </div>
         </Card>
-      </BaseNewTabLink>
+  );
+
+  return (
+    <div id="experience" className={cn('group py-2', siteUrl && 'cursor-pointer')}>
+      {siteUrl ? <BaseNewTabLink siteUrl={siteUrl}>{card}</BaseNewTabLink> : card}
     </div>
   );
 };

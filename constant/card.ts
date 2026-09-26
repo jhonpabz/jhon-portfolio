@@ -119,11 +119,31 @@ export const projectsData: Projects[] = [
 
 export const experienceData: Experience[] = [
   {
-    workPeriod: "APRIL 2024 — PRESENT",
+    workPeriod: "JAN 2025 — PRESENT",
+    title: "Front End Developer • Everlounge Inc.",
+    description:
+      "Develop and maintain new and existing projects using React, TypeScript, JavaScript, jQuery, CSS, Tailwind, PHP, Laravel, MySQL, databases, Linux, and JumpServer. Collaborate with translators, back-end developers, and UI/UX designers.",
+    date: "2025 - Present",
+    stacks: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "jQuery",
+      "CSS",
+      "Tailwind",
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Linux",
+      "JumpServer",
+    ],
+  },
+  {
+    workPeriod: "APRIL 2024 — JAN 2025",
     title: "Front End Developer • Fun J. Software Development Corp.",
     description:
       "Develop and maintain existing/new projects (React Web Admins, Vue Web app, H5 app, and Landing page) using React JS, Vue JS, Javascript, Typescript, Redux, HTML, CSS, SASS, Ant Design, Rest API’s, WebSocket, Jenkins, etc.",
-    date: "2019 - 2022",
+    date: "2024 - 2025",
     stacks: [
       "Javascript",
       "Typescript",

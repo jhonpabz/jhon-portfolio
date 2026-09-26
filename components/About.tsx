@@ -36,6 +36,14 @@ export const About = () => {
 
       <p className="mt-3 text-sm text-primary/60">
         At{" "}
+        <span className="font-medium">Everlounge Inc.</span>, I develop and
+        maintain new and existing projects using React, TypeScript, JavaScript,
+        jQuery, CSS, Tailwind, PHP, Laravel, MySQL, Linux, and JumpServer. I
+        collaborate with translators, back-end developers, and UI/UX designers.
+      </p>
+
+      <p className="mt-3 text-sm text-primary/60">
+        At{" "}
         <span className="font-medium">Fun J. Software Development Corp.</span>,
         I developed and maintained React and Vue applications, migrated old
         platforms, created new features, fixed complex bugs, and collaborated
