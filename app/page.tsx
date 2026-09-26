@@ -10,7 +10,7 @@ import DownloadPDFButton from '@/components/DownloadPDFButton';
 
 export default function Home() {
   return (
-    <main>
+    <main className="mobile-nav-content">
       <div className="lg:hidden">
         <Header />
       </div>
@@ -21,6 +21,7 @@ export default function Home() {
           <About />          
         </div>
 
+        <section id="experience" aria-label="Experience">
         <Divider label="Experience" />
 
         {experienceData.map((exp) => (
@@ -35,7 +36,9 @@ export default function Home() {
         ))}
 
         <DownloadPDFButton />
+        </section>
 
+        <section id="projects" aria-label="Project highlights">
         <Divider label="Project Highligts" />
 
         {projectsData.map((project) => (
@@ -55,6 +58,7 @@ export default function Home() {
           label="View More Projects"
           link="https://github.com/jhonpabz?tab=repositories"
         />
+        </section>
       </div>
     </main>
   );

@@ -30,7 +30,7 @@ export const ProjectCard = (
     props;
 
   return (
-    <div id="projects" className="group py-2">
+    <div className="group py-2">
       <Card className="flex flex-col lg:flex-row md:flex-row group-hover:bg-primary/10 transition-colors duration-200">
         <div className="md:basis-1/4">
           <div className="p-6 lg:mr-[-15px] md:mr-[-15px] mb-[-15px] max-w-sm">

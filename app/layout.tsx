@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from '@/components/Header';
+import { MobileNav } from '@/components/MobileNav';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,9 +28,10 @@ export default function RootLayout({
                   <Header />
                 </div>
               </div>
-              <div className="lg:basis-1/2">{children}</div>
+              <div className="min-w-0 w-full lg:basis-1/2">{children}</div>
             </div>
           </div>
+          <MobileNav />
         </ThemeProvider>
       </body>
     </html>

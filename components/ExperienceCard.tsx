@@ -57,7 +57,7 @@ export const ExperienceCard = (
   );
 
   return (
-    <div id="experience" className={cn('group py-2', siteUrl && 'cursor-pointer')}>
+    <div className={cn('group py-2', siteUrl && 'cursor-pointer')}>
       {siteUrl ? <BaseNewTabLink siteUrl={siteUrl}>{card}</BaseNewTabLink> : card}
     </div>
   );
