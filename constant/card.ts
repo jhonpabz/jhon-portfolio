@@ -119,94 +119,102 @@ export const projectsData: Projects[] = [
 
 export const experienceData: Experience[] = [
   {
-    workPeriod: "JAN 2025 — PRESENT",
-    title: "Front End Developer • Everlounge Inc.",
-    description:
-      "Develop and maintain new and existing projects using React, TypeScript, JavaScript, jQuery, CSS, Tailwind, PHP, Laravel, MySQL, databases, Linux, and JumpServer. Collaborate with translators, back-end developers, and UI/UX designers.",
-    date: "2025 - Present",
-    stacks: [
+    "workPeriod": "JAN 2025 — PRESENT",
+    "title": "Full Stack Developer • Everlounge Inc.",
+    "description": "Design, develop, and deliver full-stack web applications using Node.js, Express, React, TypeScript, PostgreSQL, and Docker. Independently own projects from requirements and architecture through implementation, database integration, testing, and deployment, including e-commerce platforms and real-time chat applications. Lead frontend engineering, maintain PHP and Laravel applications, mentor developers, and conduct code reviews. Introduce AI-assisted development workflows and collaborate with backend, Ops/DevOps, UI/UX, and translation teams to ship production-ready applications in Linux-based environments.",
+    "date": "2025 - Present",
+    "stacks": [
       "React",
       "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Docker",
       "JavaScript",
-      "jQuery",
-      "CSS",
-      "Tailwind",
+      "Tailwind CSS",
       "PHP",
       "Laravel",
-      "MySQL",
       "Linux",
-      "JumpServer",
-    ],
+      "JumpServer"
+    ]
   },
   {
-    workPeriod: "APRIL 2024 — JAN 2025",
-    title: "Front End Developer • Fun J. Software Development Corp.",
-    description:
-      "Develop and maintain existing/new projects (React Web Admins, Vue Web app, H5 app, and Landing page) using React JS, Vue JS, Javascript, Typescript, Redux, HTML, CSS, SASS, Ant Design, Rest API’s, WebSocket, Jenkins, etc.",
-    date: "2024 - 2025",
-    stacks: [
-      "Javascript",
-      "Typescript",
-      "Nextjs",
+    "workPeriod": "APRIL 2024 — JAN 2025",
+    "title": "Front-End Developer • Fun J. Software Development Corp.",
+    "description": "Develop and maintain React admin panels, Vue web applications, H5 apps, and landing pages. Migrate legacy platforms, implement features, and resolve issues across local, staging, and production environments. Create technical documentation, prepare production builds for different platforms, and collaborate with backend engineers, project managers, and UI/UX designers.",
+    "date": "2024 - 2025",
+    "stacks": [
       "React",
       "Vue",
-      "WebSocket",
+      "JavaScript",
+      "TypeScript",
+      "Redux",
+      "HTML",
+      "CSS",
+      "SASS",
       "Ant Design",
-      "Tailwind",
-      "CSS",
-      "Sass",
+      "REST APIs",
+      "WebSocket",
+      "Jenkins"
     ],
-    siteUrl:
-      "https://www.linkedin.com/in/fun-j-software-development-4604782a8/",
+    "siteUrl": "https://www.linkedin.com/in/fun-j-software-development-4604782a8/"
   },
   {
-    workPeriod: "JUNE 2023 — APRIL 2024",
-    title: "Front End Developer • PHILTECH Info Services Inc.",
-    description:
-      "Develop, maintain, and test new and existing projects using React, Nextjs, Nuxtjs, Vue, Es6 Javascript, Tailwind, CSS, Sass.",
-    date: "2019 - 2022",
-    stacks: [
-      "Nextjs",
+    "workPeriod": "JUNE 2023 — APRIL 2024",
+    "title": "Front-End Developer • Philtech Info Services Inc.",
+    "description": "Develop, maintain, and test applications using Next.js, Nuxt.js, React, Vue, and TypeScript. Establish project structure, build reusable components and hooks, integrate REST APIs, and configure Redux/Thunk, Next.js, and middleware. Document application architecture and data flow from APIs through global state to components. Implement core features, review code, and help developers resolve blockers while promoting readable, maintainable, and optimized code.",
+    "date": "2023 - 2024",
+    "stacks": [
+      "Next.js",
+      "Nuxt.js",
       "React",
-      "Nuxtjs",
       "Vue",
-      "Typescript",
-      "Pinia",
-      "Tailwind",
-      "CSS",
-      "Sass",
+      "TypeScript",
+      "JavaScript",
+      "Redux",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "HTML",
+      "CSS"
     ],
-    siteUrl:
-      "https://www.linkedin.com/company/philtech-info-service-inc/mycompany/",
+    "siteUrl": "https://www.linkedin.com/company/philtech-info-service-inc/mycompany/"
   },
   {
-    workPeriod: "MARCH 2022 — JUNE 2023",
-    title: "Associate Software Engineer • Fligno Software Philippines Inc",
-    description:
-      "Design, develop, and test new and existing projects using the latest technologies(React). Apply best practice development patterns and follow design briefs, Continuous Integration/Development, and maintenance of code.",
-    date: "2019 — 2022",
-    stacks: [
+    "workPeriod": "MARCH 2022 — JUNE 2023",
+    "title": "Associate Software Engineer • Fligno Software Philippines Inc.",
+    "description": "Design, develop, and test frontend applications using React and modern web technologies. Collaborate with backend engineers, project managers, and UI/UX designers to turn concepts into production-ready applications. Estimate requirements, create technical documentation and mockups, review frontend code, and approve pull requests. Present sprint progress to clients, primarily in Australia, and teach fellow developers through the company upskilling program.",
+    "date": "2022 - 2023",
+    "stacks": [
       "React",
-      "Typescript",
-      "Next JS",
-      "Node",
-      "Express",
-      "MongoDB",
+      "JavaScript",
+      "TypeScript",
       "Redux",
       "Zustand",
+      "React Hook Form",
+      "Tailwind CSS",
       "Material UI",
-      "Tailwind",
+      "CSS",
+      "SASS",
+      "HTML",
+      "Jest"
     ],
-    siteUrl: "https://fligno.com/",
+    "siteUrl": "https://fligno.com/"
   },
   {
-    workPeriod: "AUGUST 2019 — FEB 2022",
-    title: "Web Designer/Developer • Directories Philippines Corporation",
-    description:
-      "Creation of content for client websites, as well as creation of visual elements that are aligned with client’s branding and defined site objectives using HTML, CSS, Javascript, and Jquery.",
-    date: "2019 - 2022",
-    stacks: ["HTML", "CSS", "Javascript", "JQuery"],
-    siteUrl: "https://www.dpc.ph/",
-  },
+    "workPeriod": "AUGUST 2019 — FEBRUARY 2022",
+    "title": "Web Designer & Developer • Directories Philippines Corporation (DPC) & One Hundred Services Inc.",
+    "description": "Design and build Wix websites aligned with client branding and site objectives. Customize existing websites using Powersite CMS, HTML, CSS, SASS, JavaScript, and jQuery, and enhance visual assets in Photoshop. Collaborate with the TechOps team supervisor to develop the Bel-Air Vehicle Registration System, implementing CRUD functionality and data filtering in JavaScript.",
+    "date": "2019 - 2022",
+    "stacks": [
+      "Wix",
+      "Powersite CMS",
+      "HTML",
+      "CSS",
+      "SASS",
+      "JavaScript",
+      "jQuery",
+      "Photoshop"
+    ],
+    "siteUrl": "https://www.dpc.ph/"
+  }
 ];
-
