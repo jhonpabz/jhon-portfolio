@@ -1,4 +1,4 @@
-import ChangeGPS from "@/assets/project-change-gps.png";
+﻿import ChangeGPS from "@/assets/project-change-gps.png";
 import Hyperspace from "@/assets/project-hyperspace-storage.png";
 import FilbetNextJs from "@/assets/project-filbet-nextjs.png";
 import Jhonshoppe from "@/assets/project-jhonshoppe-nuxt.jpg";
@@ -13,7 +13,7 @@ export const projectsData: Projects[] = [
     title: "Web Admin",
     description:
       "A React Web Admin Panel for online casinos enables seamless management of players, games, payments, and promotions with a secure, responsive interface. Built with React.js and Ant Design, it ensures efficient, real-time operations.",
-    image: FilbetNextJs,
+    images: [{ src: FilbetNextJs, alt: "FilbetNextJs project interface" }],
     video: "/videos/web-admin.mov",
     stacks: [
       "React",
@@ -30,7 +30,7 @@ export const projectsData: Projects[] = [
     title: "Filbet Next JS",
     description:
       "Online Casino/Betting site using React, Next JS, Typescript, Redux Toolkit, Tailwind, and React Hook Form.",
-    image: FilbetNextJs,
+    images: [{ src: FilbetNextJs, alt: "FilbetNextJs project interface" }],
 
     stacks: [
       "React",
@@ -47,7 +47,7 @@ export const projectsData: Projects[] = [
     id: 7,
     title: "Estate Planning (changegps.com.au)",
     description: "A new feature of a big accounting software in Australia.",
-    image: ChangeGPS,
+    images: [{ src: ChangeGPS, alt: "ChangeGPS project interface" }],
 
     stacks: [
       "React Vite",
@@ -64,7 +64,7 @@ export const projectsData: Projects[] = [
     title: "HYPERSPACE Storage",
     description:
       "This app is like AirBNB for storages. I created the web admin part of the application",
-    image: Hyperspace,
+    images: [{ src: Hyperspace, alt: "Hyperspace project interface" }],
 
     stacks: ["React", "Redux", "Material UI", "NodeJs", "ExpressJs", "MongoDB"],
   },
@@ -72,7 +72,7 @@ export const projectsData: Projects[] = [
     id: 1,
     title: "JHONSHOPPE",
     description: "E-commerce web app using Nuxt JS + Supabase Authentication.",
-    image: Jhonshoppe,
+    images: [{ src: Jhonshoppe, alt: "Jhonshoppe project interface" }],
     stacks: ["Vue", "Nuxt Js", "Typescript", "Tailwind", "Supabase "],
     siteUrl: "https://jhonshoppe.netlify.app/",
     githubUrl: "https://github.com/jhonpabz/jhonshoppe",
@@ -82,7 +82,7 @@ export const projectsData: Projects[] = [
     title: "AI Associate",
     description:
       "AI Associate with Next 13, React, Prisma, Tailwind, shad/cn UI. Authentication using Clerk and Open AI for API",
-    image: AIAssociate,
+    images: [{ src: AIAssociate, alt: "AIAssociate project interface" }],
     stacks: ["Next 13", "React", "Prisma", "Tailwind", "Clerk"],
     githubUrl: "https://github.com/jhonpabz/ai-associate",
   },
@@ -91,7 +91,7 @@ export const projectsData: Projects[] = [
     title: "Net Worth Tracker App",
     description:
       "Net Worth Tracker is a sleek PWA that lets you track your savings across multiple accounts with customizable cards. Use it offline on your mobile like a real app—simple, modern, and built for clarity.",
-    image: NetWorthTracker,
+    images: [{ src: NetWorthTracker, alt: "NetWorthTracker project interface" }],
     stacks: ["React", "Typescript", "Tailwind"],
     siteUrl: "https://networth-tracker-app.vercel.app/",
     githubUrl: "https://github.com/jhonpabz/networth-tracker-app",
@@ -101,7 +101,7 @@ export const projectsData: Projects[] = [
     title: "My Second Portfolio",
     description:
       "Clean and minimalist portfolio website design. I used (AOS) Animate on Scroll, Portfolio filtering, Bootstrap, CSS, and Javascript/jQuery.",
-    image: SecondPortfolio,
+    images: [{ src: SecondPortfolio, alt: "SecondPortfolio project interface" }],
     stacks: ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"],
     siteUrl: "https://jhon.netlify.app/",
     githubUrl: "https://github.com/jhonpabz/MyPortfolio2020",
@@ -111,7 +111,7 @@ export const projectsData: Projects[] = [
     title: "My First Portfolio",
     description:
       "I created this website to showcase my skill as a fresh graduate of BSIT. I use the Bootstrap framework, CCS3 Keyframes animation, parallax effect, and Javascript.",
-    image: FirstPortfolio,
+    images: [{ src: FirstPortfolio, alt: "FirstPortfolio project interface" }],
     stacks: ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"],
     siteUrl: "https://jhoncesarpablo.netlify.app/",
   },
@@ -209,3 +209,4 @@ export const experienceData: Experience[] = [
     siteUrl: "https://www.dpc.ph/",
   },
 ];
+

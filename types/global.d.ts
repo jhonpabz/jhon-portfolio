@@ -2,7 +2,8 @@ declare type Projects = {
   id: number;
   title: string;
   description: string;
-  image: Jhonshoppe;
+  image?: string | import('next/image').StaticImageData;
+  images?: { src: string | import('next/image').StaticImageData; alt: string }[];
   video?: string;
   stacks: string[];
   siteUrl?: string;

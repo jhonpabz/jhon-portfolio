@@ -7,7 +7,8 @@ declare namespace ComponentsPropsNamespace {
   };
 
   type ProjectCardProps = React.HTMLAttributes<HTMLDivElement> & {
-    imgSrc: string | StaticImageData;
+    imgSrc?: string | import('next/image').StaticImageData;
+    images?: { src: string | import('next/image').StaticImageData; alt: string }[];
     title: string;
     description: string;
     stacks?: string[];

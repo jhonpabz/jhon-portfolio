@@ -21,16 +21,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="w-full h-full max-w-6xl p-5 mx-auto">
-            <div className="flex flex-row">
-              <div className="invisible lg:basis-1/2 lg:visible">
-                <div className="fixed max-w-sm">
-                  <Header />
-                </div>
-              </div>
-              <div className="min-w-0 w-full lg:basis-1/2">{children}</div>
-            </div>
-          </div>
+          <a className="skip-link" href="#about">Skip to content</a>
+          <Header />
+          {children}
           <MobileNav />
         </ThemeProvider>
       </body>

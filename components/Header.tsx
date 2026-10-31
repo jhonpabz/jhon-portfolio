@@ -1,58 +1,7 @@
-'use client';
-
-import { Moon, Sun } from 'lucide-react';
+﻿'use client';
+import { Moon, Sun, ArrowUpRight } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import { Button } from './ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { cn } from '@/lib/utils';
-import { Socials } from './Socials';
-import { NavLink } from './NavLink';
-
 export const Header = () => {
   const { setTheme, resolvedTheme } = useTheme();
-
-  return (
-    <div className="py-14 lg:py-24 lg:h-screen">
-      <div className="flex justify-between">
-        <div>
-          <Avatar className="h-24 w-24">
-            <AvatarImage src="/jhon-pic.jpg" alt="jhon" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
-        </div>
-        <div>
-          <Button
-            aria-label="Toggle theme"
-            onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-            variant="ghost"
-            size="icon"
-          >
-            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          </Button>
-        </div>
-      </div>
-
-      <div className="flex flex-col">
-        <div className="pt-8 flex-1">
-          <p
-            className={cn(
-              'text-4xl font-bold',
-              'text-darkGreen dark:text-lightGreen'
-            )}
-          >
-            Jhon Cesar Pablo
-          </p>
-          <p className="text-xl pt-4">Front End Software Engineer</p>
-          <p className="text-sm pt-4 text-primary/60">
-            Experienced front end software engineer focused on building web app
-          </p>
-        </div>
-        <NavLink />
-        <div className="lg:absolute lg:bottom-24 lg:left-0 lg:block lg:self-end">
-          <Socials />
-        </div>
-      </div>
-    </div>
-  );
+  return <header className="site-header"><a href="#about" className="wordmark" aria-label="Jhon Pablo home">jp<span>.</span></a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Selected work</a></nav><div className="header-actions"><button className="theme-toggle" aria-label="Toggle theme" onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}><Sun className="dark:block hidden" size={18}/><Moon className="dark:hidden" size={18}/></button><a className="contact-link" href="https://www.linkedin.com/in/jhoncesarpablo/" target="_blank" rel="noreferrer">Let’s connect <ArrowUpRight size={16}/></a></div></header>;
 };

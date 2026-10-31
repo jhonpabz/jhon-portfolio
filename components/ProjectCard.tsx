@@ -1,124 +1,19 @@
-"use client";
-
-import { ExternalLink, Github } from "lucide-react";
-import Image from "next/image";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "./ui/badge";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import { BaseNewTabLink } from "./base/BaseNewTabLink";
-import dynamic from "next/dynamic";
-
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
-
-export const ProjectCard = (
-  props: ComponentsPropsNamespace.ProjectCardProps
-) => {
-  const { imgSrc, title, description, stacks, siteUrl, githubUrl, video } =
-    props;
-
-  return (
-    <div className="group py-2">
-      <Card className="flex flex-col lg:flex-row md:flex-row group-hover:bg-primary/10 transition-colors duration-200">
-        <div className="md:basis-1/4">
-          <div className="p-6 lg:mr-[-15px] md:mr-[-15px] mb-[-15px] max-w-sm">
-            {video ? (
-              <ReactPlayer
-                url={video}
-                width="100%"
-                height="100%"
-                controls={true}
-                playing={false}
-                muted={true}
-              />
-            ) : (
-              <Image
-                src={imgSrc}
-                alt="Project | Experience"
-                width={700}
-                height={400}
-                className={cn(
-                  "rounded-lg border-2 transition-colors duration-300 min-w-[150px]",
-                  "group-hover:border-darkGreen dark:group-hover:border-lightGreen"
-                )}
-              />
-            )}
-          </div>
-        </div>
-        <div className="md:basis-3/4">
-          <CardHeader>
-            <CardTitle
-              className={cn(
-                "text-xl transition-colors duration-300",
-                "group-hover:text-darkGreen dark:group-hover:text-lightGreen"
-              )}
-            >
-              {title}
-            </CardTitle>
-            <CardDescription className="mt-1">{description}</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="flex">
-              {githubUrl && (
-                <BaseNewTabLink siteUrl={githubUrl} style="mr-3">
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <Github className="w-4 h-4" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className="text-xs">View code on Github</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </BaseNewTabLink>
-              )}
-              {siteUrl && (
-                <BaseNewTabLink siteUrl={siteUrl}>
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <ExternalLink className="w-4 h-4" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className="text-xs">Visit live site</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </BaseNewTabLink>
-              )}
-            </div>
-          </CardContent>
-          {!!stacks && (
-            <CardFooter className="flex flex-wrap mt-[-15px]">
-              {stacks.map((stack) => (
-                <Badge
-                  variant="secondary"
-                  className={cn(
-                    "mr-4 transition-colors duration-300  mt-2",
-                    "text-darkGreen dark:text-lightGreen"
-                  )}
-                  key={stack}
-                >
-                  {stack}
-                </Badge>
-              ))}
-            </CardFooter>
-          )}
-        </div>
-      </Card>
-    </div>
-  );
+﻿'use client';
+import { useState } from 'react';
+import { ArrowUpRight, Github, ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import Image from 'next/image';
+export const ProjectCard = ({imgSrc, images, title, description, stacks, siteUrl, githubUrl, video}: ComponentsPropsNamespace.ProjectCardProps) => {
+ const gallery = images?.length ? images : imgSrc ? [{src: imgSrc, alt: `${title} preview`}] : [];
+ const [index, setIndex] = useState(0);
+ const [showVideo, setShowVideo] = useState(Boolean(video));
+ const activeIndex = Math.min(index, Math.max(0, gallery.length - 1));
+ const change = (next: number) => { setIndex((next + gallery.length) % gallery.length); setShowVideo(false); };
+ return <article className="project-card" aria-label={title}>
+  <div className="project-media" role="region" aria-label={`${title} gallery`} onKeyDown={e=>{if(gallery.length>1 && (e.key==='ArrowRight'||e.key==='ArrowLeft')){e.preventDefault();change(activeIndex+(e.key==='ArrowRight'?1:-1));}}} tabIndex={gallery.length>1?0:undefined}>
+   {showVideo && video ? <video src={video} controls preload="none" playsInline aria-label={`${title} video`}/> : gallery[activeIndex] ? <Image src={gallery[activeIndex].src} alt={gallery[activeIndex].alt} fill sizes="(max-width: 767px) 100vw, 50vw"/> : <span className="empty-preview">{title}</span>}
+   {!showVideo && gallery.length>1 && <div className="gallery-controls"><button aria-label={`Previous image of ${title}`} onClick={()=>change(activeIndex-1)}><ChevronLeft size={18}/></button><span aria-live="polite">{activeIndex+1} / {gallery.length}</span><button aria-label={`Next image of ${title}`} onClick={()=>change(activeIndex+1)}><ChevronRight size={18}/></button></div>}
+  </div>
+  {(gallery.length>1 || (video && gallery.length>0)) && <div className="gallery-thumbnails" aria-label={`${title} media selection`}>{video && <button className="video-thumbnail" aria-label={`Play ${title} video`} aria-pressed={showVideo} onClick={()=>setShowVideo(true)}><Play size={18}/><span>Video</span></button>}{gallery.map((item,i)=><button key={i} aria-label={`Show image ${i+1} of ${title}`} aria-pressed={!showVideo && activeIndex===i} onClick={()=>change(i)}><Image src={item.src} alt="" fill sizes="72px"/></button>)}</div>}
+  <div className="project-info"><div className="project-title"><h3>{title}</h3><div>{githubUrl && <a href={githubUrl} target="_blank" rel="noreferrer" aria-label={`View ${title} code on GitHub`}><Github size={19}/></a>}{siteUrl && <a href={siteUrl} target="_blank" rel="noreferrer" aria-label={`Visit ${title}`}><ArrowUpRight size={22}/></a>}</div></div><p>{description}</p><div className="tags">{stacks?.map(s=><span key={s}>{s}</span>)}</div></div>
+ </article>;
 };
