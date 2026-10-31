@@ -69,6 +69,25 @@ export const projectsData: Projects[] = [
     stacks: ["React", "Redux", "Material UI", "NodeJs", "ExpressJs", "MongoDB"],
   },
   {
+    id: 8,
+    title: "囍 Wedding Invitation — Chinese New Year Inspired",
+    description:
+      "A production-ready, mobile-first wedding RSVP web application built as a long-form vertical story scroll. Inspired by traditional Chinese New Year aesthetics: Imperial Red, Luminous Gold, and parchment cards.",
+    images: [
+      { src: "/projects/wedding-invitation/1.png", alt: "Wedding invitation cover with a sealed red envelope and gold fans" },
+      { src: "/projects/wedding-invitation/2.png", alt: "Opened envelope revealing Rachelle and Samson's wedding invitation" },
+      { src: "/projects/wedding-invitation/3.png", alt: "Red and gold wedding announcement for Rachelle Murro and Samson Pacatang" },
+      { src: "/projects/wedding-invitation/4.png", alt: "Welcome letter to wedding guests on a parchment card" },
+      { src: "/projects/wedding-invitation/5.png", alt: "Prenup photo gallery with gold-bordered photographs" },
+      { src: "/projects/wedding-invitation/6.png", alt: "Wedding day schedule of events displayed as a timeline" },
+      { src: "/projects/wedding-invitation/7.png", alt: "Dress code guidelines with red and gold colors and formal attire illustrations" },
+      { src: "/projects/wedding-invitation/8.png", alt: "Wedding countdown surrounded by lanterns and falling petals" },
+    ],
+    stacks: [],
+    siteUrl: "https://rachelle-samson.vercel.app/",
+    githubUrl: "https://github.com/jhonpabz/rachelle-samson",
+  },
+  {
     id: 1,
     title: "JHONSHOPPE",
     description: "E-commerce web app using Nuxt JS + Supabase Authentication.",
