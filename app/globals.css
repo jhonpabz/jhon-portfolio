@@ -214,3 +214,25 @@ footer {border-top:1px solid var(--line);padding-top:70px;padding-bottom:32px;}.
   .project-grid-personal { grid-template-columns: minmax(0, 1fr); }
   .project-category + .project-category { margin-top: 48px; }
 }
+
+/* Developer story: editorial copy alongside a portrait film. */
+.about-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 80px); align-items: center; }
+.developer-bio { margin-top: 32px; max-width: 540px; }
+.developer-copy .profile-signature { padding-top: 26px; border-top: 1px solid var(--line); }
+.journey-film { min-width: 0; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; background: var(--surface); box-shadow: 0 20px 60px #080c0b0a; }
+.journey-film-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 20px 24px; border-bottom: 1px solid var(--line); color: var(--quiet); font: 9px monospace; letter-spacing: 1.5px; }
+.journey-film-header > span:first-child { display: flex; align-items: center; gap: 10px; color: var(--electric); }
+.journey-film-stage { padding: 24px; background: radial-gradient(ellipse at 50% 40%, #a6df5120, transparent 70%), linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: auto, 40px 40px, 40px 40px; }
+.journey-video-frame { width: min(100%, 280px); aspect-ratio: 9 / 16; margin: auto; border: 1px solid #b3d88b66; border-radius: 12px; overflow: hidden; background: #080c0b; box-shadow: 0 0 0 6px #080c0b0a, 0 16px 36px #080c0b30; }
+.journey-video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.journey-film-caption { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; padding: 24px; border-top: 1px solid var(--line); }
+.journey-film-label { display: block; margin-bottom: 8px; font: 9px monospace; letter-spacing: 1.5px; color: var(--quiet); }
+.journey-film-caption h3 { font-size: 19px; font-weight: 500; letter-spacing: -.5px; line-height: 1.4; }
+.journey-film-caption a { color: var(--electric); }
+@media (max-width: 767px) {
+ .about-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+ .developer-bio { margin-top: 24px; }
+ .journey-film { width: 100%; max-width: 440px; justify-self: center; }
+ .journey-film-header { padding: 18px; font-size: 8px; letter-spacing: 1px; }
+ .journey-film-stage, .journey-film-caption { padding: 20px; }
+}

@@ -10,7 +10,25 @@ export default function Home() {
    <div className="hero-bottom"><span>7+ YEARS OF BUILDING FOR THE WEB</span><a href="#experience">Scroll to explore <ArrowDown size={14}/></a><span>REACT / NEXT.JS / TYPESCRIPT / NODE.JS / EXPRESS / POSTGRESQL</span></div>
   </section>
   <div className="technology-strip" aria-label="Core technologies">{['React','Next.js','Typescript','Node.js','Express','PostgreSQL'].map(t=><span key={t}>{t}<i>✳</i></span>)}</div>
-  <section className="about-section section-shell"><p className="eyebrow">01 / THE DEVELOPER</p><div className="about-grid"><h2>Built with intent.<br/><span className="muted">Made for people.</span></h2><div><p>Full Stack Developer with 7+ years of experience and strong expertise in frontend engineering, specializing in React, TypeScript, and modern web technologies. Experienced in structured development environments with dedicated frontend and backend teams, following scalable architecture and coding best practices, as well as independently owning projects end-to-end in lean teams. Skilled in building maintainable applications, mentoring developers, conducting code reviews, and delivering production-ready solutions using modern full-stack technologies.</p><div className="profile-signature"><Image src="/jhon-profile.jpg" width={48} height={48} alt="Jhon Cesar Pablo"/><div><strong>Jhon Cesar Pablo</strong><span>Full Stack Developer</span></div></div></div></div></section>
+  <section className="about-section section-shell" aria-labelledby="developer-heading">
+   <p className="eyebrow">01 / THE DEVELOPER</p>
+   <div className="about-grid">
+    <div className="developer-copy">
+     <h2 id="developer-heading">Built with intent.<br/><span className="muted">Made for people.</span></h2>
+     <div className="developer-bio"><p>Full Stack Developer with 7+ years of experience and strong expertise in frontend engineering, specializing in React, TypeScript, and modern web technologies.</p><p>Experienced in structured development environments with dedicated frontend and backend teams, following scalable architecture and coding best practices, as well as independently owning projects end-to-end in lean teams.</p><p>Skilled in building maintainable applications, mentoring developers, conducting code reviews, and delivering production-ready solutions using modern full-stack technologies.</p><div className="profile-signature"><Image src="/jhon-profile.jpg" width={48} height={48} alt="Jhon Cesar Pablo"/><div><strong>Jhon Cesar Pablo</strong><span>Full Stack Developer</span></div></div></div>
+    </div>
+    <figure className="journey-film">
+     <div className="journey-film-header"><span><span className="status-dot"/> BEHIND THE CODE</span><span>01 / FILM</span></div>
+     <div className="journey-film-stage"><div className="journey-video-frame">
+      <iframe src="https://www.youtube-nocookie.com/embed/gNc4qfBsR1I?playsinline=1&rel=0" title="Jhon Cesar Pablo ? My software engineer journey" width="360" height="640" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+     </div></div>
+     <figcaption className="journey-film-caption">
+      <div><span className="journey-film-label">THE STORY SO FAR</span><h3>My software engineer journey.</h3></div>
+      <a className="text-link" href="https://www.youtube.com/watch?v=gNc4qfBsR1I" target="_blank" rel="noreferrer">Watch on YouTube <ArrowUpRight size={16}/></a>
+     </figcaption>
+    </figure>
+   </div>
+  </section>
   <section id="experience" className="experience-section section-shell"><div className="section-heading"><div><p className="eyebrow">02 / THE JOURNEY</p><h2>Experience that<br/><span className="muted">moves things forward.</span></h2></div><a className="text-link" href="/Jhon_Cesar_Pablo_CV.pdf" download>Full CV <ArrowUpRight size={18}/></a></div><div className="experience-list">{experienceData.map((exp,i)=><article className="experience-row" key={exp.workPeriod}><div className="experience-date"><span className="row-number">0{i+1}</span>{exp.workPeriod}</div><div><h3>{exp.siteUrl?<a href={exp.siteUrl} target="_blank" rel="noreferrer">{exp.title} <ArrowUpRight size={18}/></a>:exp.title}</h3><p>{exp.description}</p><div className="tags">{exp.stacks.map(s=><span key={s}>{s}</span>)}</div></div></article>)}</div></section>
   <section id="projects" className="projects-section section-shell"><div className="section-heading"><div><p className="eyebrow">03 / SELECTED WORK</p><h2>Real challenges.<br/><span className="muted">Thoughtful solutions.</span></h2></div><p>A selection of platforms, products,<br/>and experiments I’ve helped bring to life.</p></div>
     {[
