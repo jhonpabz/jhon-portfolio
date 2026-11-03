@@ -1,15 +1,11 @@
 ﻿import { test, expect } from '@playwright/test';
 
-test('project media switches between its video and screenshot', async ({ page }) => {
+test('Web Admin displays only its video', async ({ page }) => {
   await page.goto('/');
   const project = page.getByRole('article', { name: 'Web Admin', exact: true });
-  await expect(project.locator('video')).toBeAttached();
-  await project.getByRole('button', { name: 'Show image 1 of Web Admin', exact: true }).click();
-  await expect(project.locator('video')).toHaveCount(0);
-  await expect(project.getByRole('region', { name: 'Web Admin gallery' }).locator('img')).toBeVisible();
-  await project.getByRole('button', { name: 'Play Web Admin video' }).click();
   await expect(project.locator('video')).toBeVisible();
-  await expect(project.getByRole('button', { name: 'Play Web Admin video' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(project.locator('img')).toHaveCount(0);
+  await expect(project.locator('.gallery-thumbnails')).toHaveCount(0);
 });
 
 test('desktop hero and projects fit the viewport', async ({ page }) => {

@@ -13,7 +13,6 @@ export const projectsData: Projects[] = [
     title: "Web Admin",
     description:
       "A React Web Admin Panel for online casinos enables seamless management of players, games, payments, and promotions with a secure, responsive interface. Built with React.js and Ant Design, it ensures efficient, real-time operations.",
-    images: [{ src: FilbetNextJs, alt: "FilbetNextJs project interface" }],
     video: "/videos/web-admin.mov",
     stacks: [
       "React",
